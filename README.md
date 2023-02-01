@@ -1,2 +1,1 @@
-# pandulipi-website
-Official Website of Pandulipi - The Magazine Club of Jalpaiguri Government Engineering College
+# <p align = "center"> Pandulipi - Official Website </p>
