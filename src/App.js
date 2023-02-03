@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import Team from "./components/Team/Team";
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
-import EventsGallery from "./components/Gallery/EventsGallery";
+import Gallery from "./components/Gallery/Gallery";
 import BlogPage from "./components/BlogPage/BlogPage";
 import Library from "./components/eLibrary/Library";
 
@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/gallery" element={<EventsGallery />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/elibrary" element={<Library />} />
         <Route path="/team" element={<Team />} />
