@@ -2,11 +2,13 @@ import React from 'react'
 
 function ContactUs() {
   return (
-    <div className='h-[600px] bg-[#EEEEEE]'>
-        <h2 className='text-center text-4xl p-10'>CONTACT US</h2>
-        <div className=' text-[#295C7A] flex justify-center'>
+    <div className='bg-[#EEEEEE] flex flex-col items-center w-screen'>
+    <h2 className='text-center text-4xl p-10'>CONTACT US</h2>
 
-            <div className='mx-24 my-10'>
+    <div className='flex w-4/5 xl:w-3/5 flex-col justify-center items-center md:flex-row md:items-start'>
+        <div className=' text-[#295C7A] flex justify-center md:mt-10'>
+
+            <div className='mx-24'>
 
                 <div className='flex items-center'>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8 m-4">
@@ -43,8 +45,10 @@ function ContactUs() {
 
             </div>
 
-            {/* form start */}
-            <div className='w-3/12 flex flex-col justify-center items-center '>
+            
+        </div>
+        {/* form start */}
+        <div className='w-full py-10 flex flex-col justify-center items-center '>
                 
                 <form className='flex flex-col gap-y-4 w-full '>
                 
@@ -70,7 +74,7 @@ function ContactUs() {
                 <button type="submit" className="text-white mt-4 bg-[#295C7A] hover:bg-[#1a5171] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Send</button>
             </div>
             {/* form end */}
-        </div>
+    </div>
     </div>
   )
 }
