@@ -48,7 +48,7 @@ function ContactUs() {
             
         </div>
         {/* form start */}
-        <div className='w-full py-10 flex flex-col justify-center items-center '>
+        <div className='w-full xl:w-1/2 py-10 flex flex-col justify-center items-center text-[#295C7A]'>
                 
                 <form className='flex flex-col gap-y-4 w-full '>
                 
