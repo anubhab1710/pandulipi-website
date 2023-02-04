@@ -5,7 +5,7 @@ const Login = () => {
     return (
         <>
             <div className='flex justify-center items-center h-screen max-h-fit w-screen bg-[#252b42] p-10 md:py-10 h-screen sm:py10'>
-                <div className=' flex rounded-xl bg-[#fff] w-[60%] h-[80%] shadow-[0_0_10px_#00000080]'>
+                <div className=' flex rounded-xl bg-[#fff] w-[60%] shadow-[0_0_10px_#00000080]'>
                     <div className='bg-[#295C7Acc] rounded-l-xl p-3 w-1/2'>
                         <img src={logo} className='h-5/6 w-full' alt='Pandulipi logo' />
                     </div>
@@ -38,7 +38,7 @@ const Login = () => {
                                 <button type="submit" className="text-white py-1 px-6 text-2xl w-full bg-[#295C7A] hover:bg-[#252b42] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Login</button>
                             </div>
                             <div>
-                                <span className='text-xl font-medium'>Already have an account? <NavLink to='/login' className='text-xl text-[#252b42] font-bold' >Sign Up</NavLink> </span>
+                                <span className='text-xl font-medium'>Don't have an account? <NavLink to='/login' className='text-xl text-[#252b42] font-bold' >Sign Up</NavLink> </span>
                             </div>
                         </div>
                     </div>
