@@ -173,7 +173,7 @@ const Gallery = () => {
     
     return (
         <div id='canvas'>
-            <h1 className='text-center text-5xl p-10 text-[#fff]'>Events Gellery</h1>
+            <h1 className='text-center text-5xl p-10 text-[#fff]'>Events Gallery</h1>
             <div id='row'>
                 {/* <div id='row' className='flex flex-wrap py-0 px-6'> */}
                 <div className='column'>
