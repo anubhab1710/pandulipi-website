@@ -2,8 +2,8 @@ import React from 'react'
 
 function Hero2() {
   return (
-    <div className='h-screen gap-x-60 bg-[#252B42] flex flex-col justify-center items-center xl:flex-row'>
-        <img className='h-3/4 m-10' src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fd28hgpri8am2if.cloudfront.net%2Fbook_images%2Fonix%2Fcvr9781421539669%2Fdeath-note-black-edition-vol-3-9781421539669_hr.jpg&f=1&nofb=1&ipt=a5a617b12c7a14d830d31db465e3888a092f636b8a2f7b650dde2fd8a7cb8a6e&ipo=images" alt="" />
+    <div className='min-h-screen gap-x-60 bg-[#252B42] flex flex-col justify-center items-center xl:flex-row'>
+        <img className='p-10 max-w-sm md:max-w-lg xl:max-w-xl' src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fd28hgpri8am2if.cloudfront.net%2Fbook_images%2Fonix%2Fcvr9781421539669%2Fdeath-note-black-edition-vol-3-9781421539669_hr.jpg&f=1&nofb=1&ipt=a5a617b12c7a14d830d31db465e3888a092f636b8a2f7b650dde2fd8a7cb8a6e&ipo=images" alt="" />
         <div className='text-white p-10 flex flex-col justify-center items-center xl:gap-y-32'>
             <div className='flex flex-col gap-y-3  justify-center items-center'>
                 <h1 className='text-4xl xl:text-8xl'>Pandulipi</h1>

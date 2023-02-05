@@ -3,8 +3,8 @@ import React from 'react'
 function Hero() {
   return (
     <div className='h-screen flex flex-col justify-center items-center'>
-        <img className='absolute -z-10 h-full w-full bg-contain' src="http://yesofcorsa.com/wp-content/uploads/2016/12/4k-Winter-Desktop-Wallpaper.jpg" alt="" />
-        <div className='h-full w-full bg-cover  bg-gray-200 bg-opacity-60 flex flex-col justify-center items-center'>
+        <img className='absolute -z-10 h-full w-full object-cover' src="http://yesofcorsa.com/wp-content/uploads/2016/12/4k-Winter-Desktop-Wallpaper.jpg" alt="" />
+        <div className='h-full w-full bg-gray-200 bg-opacity-60 flex flex-col justify-center items-center'>
             <h1 className='text-7xl xl:text-9xl'>Pandulipi</h1>
             <h2 className='text-5xl xl:text-8xl text-[#295C7A]'>Magazine</h2>
             <div className='p-10 text-center max-w-5xl xl:text-2xl'>
