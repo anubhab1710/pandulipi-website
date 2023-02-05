@@ -5,7 +5,7 @@ import Youtube from '../img/youtube-logo-84.png'
 import Facebook from '../img/facebook-circle-logo-84.png'
 function Footer() {
   return (
-    <div className='flex justify-center w-full bg-[#252B42]'>
+    <div className='flex justify-center w-full bg-[#252B42] md:py-10'>
 
     <div className='text-center text-white flex flex-col items-center gap-x-64 p-10 gap-y-10 font-oranienbaum xl:flex-row'>
         <div className='flex flex-col items-center'>
