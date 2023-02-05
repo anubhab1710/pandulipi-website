@@ -36,10 +36,10 @@ function Navbar() {
                             <NavLink to="/team" className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={({ isActive }) => isActive ? { color: '#00B8FF ', fontWeight: 'bold' } : { color: 'white', fontWeight: 'normal' }}>Team</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/login' className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{ color: '#00B8FF ', fontWeight: 'bold', border: '1px solid #00B8FF', padding: '0px 8px' }} >Login</NavLink>
+                            <NavLink to='/login' className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-white md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{ color: '#0398BD  ', fontWeight: 'bold', border: '1px solid #0398BD ', padding: '0px 8px' }} >Login</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/signup' className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{ color: '#00B8FF ', fontWeight: 'bold', border: '1px solid #00B8FF', padding: '0px 8px' }} >Signup</NavLink>
+                            <NavLink to='/signup' className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={{ color: '#0398BD  ', fontWeight: 'bold', border: '1px solid #0398BD ', padding: '0px 8px' }} >Signup</NavLink>
                         </li>
                     </ul>
                 </div>
