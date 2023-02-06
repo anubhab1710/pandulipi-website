@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from './Modal';
 import './style.css';
 
 const Gallery = () => {
@@ -171,6 +172,16 @@ const Gallery = () => {
         },
     ]
     
+    // var a;
+    var a = "https://images.pexels.com/photos/2113566/pexels-photo-2113566.jpeg";
+    const [show, setShow] = useState(false)
+
+    function set(p){
+        a = p;
+        // setShow(true);
+    }
+
+
     return (
         <div id='canvas'>
             <h1 className='text-center text-5xl p-10 text-[#fff]'>Events Gallery</h1>
@@ -179,7 +190,10 @@ const Gallery = () => {
                 <div className='column'>
                     {column1.map((details) => (
                         <div>
-                            <img src={details.imgLink} alt={details.name} className='myImg' />
+                            <img onClick={()=>{
+                                {set(details.imgLink)};
+                                setShow(true);
+                            }} src={details.imgLink} alt={details.name} className='myImg' />
                         </div>
 
                     ))}
@@ -187,26 +201,39 @@ const Gallery = () => {
                 <div className='column'>
                     {column2.map((details) => (
                         <div>
-                            <img src={details.imgLink} alt={details.name} className='myImg' />
+                            <img onClick={()=>{
+                                {set(details.imgLink)};
+                                setShow(true);
+                            }} src={details.imgLink} alt={details.name} className='myImg' />
                         </div>
                     ))}
                 </div>
                 <div className='column'>
                     {column3.map((details) => (
                         <div>
-                            <img src={details.imgLink} alt={details.name} className='myImg' />
+                            <img onClick={()=>{
+                                {set(details.imgLink)};
+                                setShow(true);
+                            }} src={details.imgLink} alt={details.name} className='myImg' />
                         </div>
                     ))}
                 </div>
                 <div className='column'>
                     {column4.map((details) => (
                         <div>
-                            <img src={details.imgLink} alt={details.name} className='myImg' />
+                            <img onClick={()=>{
+                                {set(details.imgLink)};
+                                setShow(true);
+                            }} src={details.imgLink} alt={details.name} className='myImg' />
                         </div>
                     ))}
                 </div>
 
-            </div>            
+            </div>
+
+            <Modal onClose={() => setShow(false)} show={show}>
+                <img src={a} />
+            </Modal>          
         </div>
 
     )

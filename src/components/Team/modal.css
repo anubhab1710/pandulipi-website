@@ -1,0 +1,111 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
+/* The Modal (background) */
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    /* width: 100%; */
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  /* Modal Content */
+  .card {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  .socialmedia{
+    display:flex;
+    flex-wrap : wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 1rem 0rem;
+  }
+  
+  .card-content{
+    background-color: #fefefe;
+    margin: 1rem 1.2rem 1rem 1.2rem;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    display: flex;
+    border-radius: 4px;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+  .content{
+      padding: 2rem;
+      padding-top: 0.2rem;
+  }
+  .card-image{
+    border-radius:6px;
+    width: 100%;
+  }
+
+  @keyframes animatetop {
+    from {transform: scale(0); opacity:0}
+    to {transform: scale(1); opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    position:absolute;
+    top: -1rem;
+    right: 0rem;
+    background-color: #295C7A;
+    color: white;
+    border-radius: 50%;
+    padding : 0.4rem 0.6rem 0rem 0.6rem;
+    scale:1.25;
+  }
+  
+  .close:hover{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .Off {
+    position:absolute;
+    top: 0;
+    right: 0;
+    /* background-color: #f9f9f913; */
+    color: white;
+    /* border-radius: 50%; */
+    padding: 2em 4em;
+    scale: 1.5;
+  }
+  
+  .Off:hover{
+    /* color: #000; */
+    /* text-decoration: none; */
+    cursor: pointer;
+    transform: scale(1.1)
+  }
+
+  @media screen and (max-width: 800px) {
+    .desc{
+        display:none;
+    }
+    .card{
+        width: 60%;
+    }
+    .card-content{
+        margin:auto;
+        flex-wrap: wrap;
+    }
+    .close{
+        right: -1rem;
+    }
+  }
