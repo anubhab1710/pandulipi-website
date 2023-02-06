@@ -8,7 +8,7 @@ import Home from "./components/Home/Home";
 import Gallery from "./components/Gallery/Gallery";
 import BlogPage from "./components/BlogPage/BlogPage";
 import Library from "./components/eLibrary/Library";
-
+import Error from "./components/Error";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/elibrary" element={<Library />} />
         <Route path="/team" element={<Team />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <ContactUs />
       <Footer />
