@@ -1,9 +1,10 @@
 import React from 'react'
 import './modal.css'
-// import insta from './img/instagram-logo-84.png'
-// import Linkedin from './img/linkedin-square-logo-84.png'
-// import Youtube from './img/youtube-logo-84.png'
-// import Facebook from './img/facebook-circle-logo-84.png'
+import fb from '../../assets/social media icons/facebook.svg'
+import ig from '../../assets/social media icons/instagram.svg'
+import gh from '../../assets/social media icons/github.svg'
+import ln from '../../assets/social media icons/linkedin.svg'
+
 
 const Card = (props) => {
     if (!props.show) {
@@ -20,25 +21,25 @@ const Card = (props) => {
                             <div className='cursor-pointer'>
                                 <a href={props.facebook} target="_blank" rel="noopener noreferrer">
                                     {/* <img src={Facebook} alt="" className='h-6' /> */}
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" alt="" className='h-6' />
+                                    <img src={fb} alt="" className='h-8' />
                                 </a>
                             </div>
                             <div className='cursor-pointer'>
                                 <a href={props.instagram} target="_blank" rel="noopener noreferrer">
                                     {/* <img src={insta} alt="" className='h-6' /> */}
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/640px-Instagram_icon.png" alt="" className='h-6' />
+                                    <img src={ig} alt="" className='h-8' />
                                 </a>
                             </div>
                             <div className='cursor-pointer'>
                                 <a href={props.linkedin} target="_blank" rel="noopener noreferrer">
                                     {/* <img src={Linkedin} alt="" className='h-6' /> */}
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png" alt="" className='h-6' />
+                                    <img src={ln} alt="" className='h-8' />
                                 </a>
                             </div>
                             <div className='cursor-pointer'>
                                 <a href={props.github} target="_blank" rel="noopener noreferrer">
                                     {/* <img src={Youtube} alt="" className='h-6' /> */}
-                                    <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="" className='h-6' />
+                                    <img src={gh} alt="" className='h-8' />
                                 </a>
                             </div>
                         </div>
