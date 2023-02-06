@@ -2,7 +2,7 @@ import React from 'react'
 
 function LatestEventCard({title, link}) {
   return (
-    <div className="flex justify-center flex-shrink-0">
+    <div className="flex justify-center hover:scale-110 transition-all flex-shrink-0">
         <div className="rounded-lg bg-white max-w-xs md:max-w-md shadow-2xl">
             <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
                 <img className="rounded-t-lg w-full" src={link} alt=""/>

@@ -54,24 +54,24 @@ function ContactUs() {
                 
                 <div className="grid md:grid-cols-2 md:gap-6">
                     <div>
-                        <label for="small-input" className="block mb-2 text-lg font-medium ">First Name</label>
+                        <label htmlFor="small-input" className="block mb-2 text-lg font-medium ">First Name</label>
                         <input type="text" id="small-input" className="block w-full p-3 text-black bg-[#295C7A] bg-opacity-10 rounded-md"/>
                     </div>
                     <div>
-                        <label for="small-input" className="block mb-2 text-lg font-medium ">Last Name</label>
+                        <label htmlFor="small-input" className="block mb-2 text-lg font-medium ">Last Name</label>
                         <input type="text" id="small-input" className="block w-full p-3 text-black bg-[#295C7A] bg-opacity-10 rounded-md"/>
                     </div>
                 </div>
                 <div>
-                    <label for="small-input" className="block mb-2 text-lg font-medium ">Email</label>
+                    <label htmlFor="small-input" className="block mb-2 text-lg font-medium ">Email</label>
                     <input type="text" id="small-input" className="block w-full p-3 text-black bg-[#295C7A] bg-opacity-10 rounded-md"/>
                 </div>
 
 
-                <label for="message" class="block text-lg font-medium">Your message</label>
+                <label htmlFor="message" class="block text-lg font-medium">Your message</label>
                 <textarea id="message" rows="6" class="block p-2.5 w-full text-sm bg-[#295C7A] bg-opacity-10 rounded-md" placeholder="Write your thoughts here..."></textarea>
                 </form>
-                <button type="submit" className="text-white mt-4 bg-[#295C7A] hover:bg-[#1a5171] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Send</button>
+                <button type="submit" className="text-white mt-4 bg-[#295C7A] hover:bg-[#1a5171] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xl w-full sm:w-auto px-5 py-2.5 text-center">Send</button>
             </div>
             {/* form end */}
     </div>
