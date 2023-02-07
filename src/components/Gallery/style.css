@@ -1,45 +1,94 @@
-#canvas{
-    background-color : #252b42;
-    padding : 1rem 0rem;
+#canvas {
+  background-color: #252b42;
+  padding: 1rem 0rem;
 }
 
 #row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-    justify-content: space-around;
-    align-items: center;
-    margin : 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 4rem;
+  margin-top: 2rem;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  display: flex;
+  flex-flow: column wrap;
+  align-self: flex-start;
 }
 
-.column img:hover {opacity: 0.7;}
+.column img:hover {
+  opacity: 0.7;
+}
 
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#navigation {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.album_name {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2px 9px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0);
+}
+
+.album_name:hover {
+  transform: scale(1.25)
+}
+
+.album_name:active,
+.album_name:focus {
+  color: antiquewhite;
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(1.25);
+  font-weight: 100;
+  border-bottom: 3px solid antiquewhite; 
+}
+
+
+.loadmore {
+  margin: 1rem;
+  text-align: center;
+  font-size: large;
+  padding: 0.3rem 1.5rem;
+  color: antiquewhite;
+  border: 3px solid antiquewhite;
+  box-shadow: 2px 2px 5px 3px #161826d6;
+}
+
+.loadmore:hover {
+  color: black;
+  font-weight: bolder;
+  background-color: whitesmoke;
+  box-shadow: 2px 2px 5px 3px #161826d6;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
   }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
   }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-  
+}
