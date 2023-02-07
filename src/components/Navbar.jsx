@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import Logo from "../assets/img/Logo-White.svg"
+import Logo from "../assets/img/Pandulipi Logo.png"
 
 function Navbar() {
     return (

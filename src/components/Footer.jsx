@@ -1,8 +1,8 @@
 import React from 'react'
-import insta from '../img/instagram-logo-84.png'
-import Linkedin from '../img/linkedin-square-logo-84.png'
-import Youtube from '../img/youtube-logo-84.png'
-import Facebook from '../img/facebook-circle-logo-84.png'
+import insta from '../assets/icons/instagram-logo-84.png'
+import Linkedin from '../assets/icons/linkedin-square-logo-84.png'
+import Youtube from '../assets/icons/youtube-logo-84.png'
+import Facebook from '../assets/icons/facebook-circle-logo-84.png'
 function Footer() {
   return (
     <div className='flex justify-center w-full bg-[#252B42] md:py-10'>
