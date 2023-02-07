@@ -2,89 +2,82 @@ import React, { useState } from 'react'
 import Card from './Card'
 
 const WebTeam = () => {
+    const [show, setShow] = useState(false)
     const webTeamDetails = [
         {
             "name": "Lorem Ipsum",
             "designation": "Lorem Ipsum Lorem",
-            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design. Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.",
+            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.It may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, without the meaning of the text influencing the design.",
             "imgLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeZj1SB4KzSbjx_oKlZpyrOLlEL9K9DW0JA&usqp=CAU",
             "facebook": "www.facebook.com",
             "instagram": "www.instagram.com",
             "linkedin": "www.linkedin.com",
             "github": "www.github.com"
-        },
-        {
+        }, {
             "name": "Lorem Ipsum",
             "designation": "Lorem Ipsum Lorem",
-            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design. Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.",
+            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.It may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, without the meaning of the text influencing the design.",
             "imgLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeZj1SB4KzSbjx_oKlZpyrOLlEL9K9DW0JA&usqp=CAU",
             "facebook": "www.facebook.com",
             "instagram": "www.instagram.com",
             "linkedin": "www.linkedin.com",
             "github": "www.github.com"
-        },
-        {
+        }, {
             "name": "Lorem Ipsum",
             "designation": "Lorem Ipsum Lorem",
-            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design. Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.",
+            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.It may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, without the meaning of the text influencing the design.",
             "imgLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeZj1SB4KzSbjx_oKlZpyrOLlEL9K9DW0JA&usqp=CAU",
             "facebook": "www.facebook.com",
             "instagram": "www.instagram.com",
             "linkedin": "www.linkedin.com",
             "github": "www.github.com"
-        },
-        {
+        }, {
             "name": "Lorem Ipsum",
             "designation": "Lorem Ipsum Lorem",
-            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design. Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.",
+            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.It may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, without the meaning of the text influencing the design.",
             "imgLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeZj1SB4KzSbjx_oKlZpyrOLlEL9K9DW0JA&usqp=CAU",
             "facebook": "www.facebook.com",
             "instagram": "www.instagram.com",
             "linkedin": "www.linkedin.com",
             "github": "www.github.com"
-        },
-        {
+        }, {
             "name": "Lorem Ipsum",
             "designation": "Lorem Ipsum Lorem",
-            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design. Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.",
+            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.It may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, without the meaning of the text influencing the design.",
             "imgLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeZj1SB4KzSbjx_oKlZpyrOLlEL9K9DW0JA&usqp=CAU",
             "facebook": "www.facebook.com",
             "instagram": "www.instagram.com",
             "linkedin": "www.linkedin.com",
             "github": "www.github.com"
-        },
-        {
+        }, {
             "name": "Lorem Ipsum",
             "designation": "Lorem Ipsum Lorem",
-            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design. Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.",
+            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.It may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, without the meaning of the text influencing the design.",
             "imgLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeZj1SB4KzSbjx_oKlZpyrOLlEL9K9DW0JA&usqp=CAU",
             "facebook": "www.facebook.com",
             "instagram": "www.instagram.com",
             "linkedin": "www.linkedin.com",
             "github": "www.github.com"
-        },
-        {
+        }, {
             "name": "Lorem Ipsum",
             "designation": "Lorem Ipsum Lorem",
-            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design. Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.",
+            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.It may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, without the meaning of the text influencing the design.",
             "imgLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeZj1SB4KzSbjx_oKlZpyrOLlEL9K9DW0JA&usqp=CAU",
             "facebook": "www.facebook.com",
             "instagram": "www.instagram.com",
             "linkedin": "www.linkedin.com",
             "github": "www.github.com"
-        },
-        {
+        }, {
             "name": "Lorem Ipsum",
             "designation": "Lorem Ipsum Lorem",
-            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design. Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.",
+            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.It may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, without the meaning of the text influencing the design.",
             "imgLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeZj1SB4KzSbjx_oKlZpyrOLlEL9K9DW0JA&usqp=CAU",
-            "facebook": "https://www.facebook.com",
-            "instagram": "https://www.instagram.com",
-            "linkedin": "https://www.linkedin.com",
-            "github": "https://www.github.com"
+            "facebook": "www.facebook.com",
+            "instagram": "www.instagram.com",
+            "linkedin": "www.linkedin.com",
+            "github": "www.github.com"
         },
     ]
-    const [show, setShow] = useState(false)
 
     return (
         <div className='bg-[#252b42]'>
@@ -95,7 +88,11 @@ const WebTeam = () => {
                         <div className='flex flex-col items-center gap-4'>
                             <div className='relative'>
                                 <img src={details.imgLink} alt={details.name} className='rounded-full mx-auto  w-48 h-48' />
-                                <button onClick={()=>{setShow(true)}} className='absolute bottom-5 right-5 rounded-full py-[6px] px-[15px] bg-white shadow-sm shadow-white'>-</button>
+                                <button onClick={() => { setShow(true) }} className='absolute bottom-4 right-0 rounded-full py-[6px] px-[15px] bg-transparent'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill='#fff' viewBox="0 0 20 20" className='shadow-[0_0_4px_#444] rounded-full'>
+                                        <path d="M10,20A10,10,0,1,0,0,10,10,10,0,0,0,10,20ZM4.049,9h8.559L10.342,6.735l1.414-1.414,4.735,4.733-4.735,4.734-1.414-1.414L12.718,11H4.049Z" />
+                                    </svg>
+                                </button>
                             </div>
                             <div>
                                 <p className='text-center font-bold text-[#fff]'>{details.name}</p>
@@ -106,21 +103,21 @@ const WebTeam = () => {
                 </div>
             </div>
             <Card onClose={() => setShow(false)} show={show} />
-                
+
         </div>
     )
 }
 
 Card.defaultProps =
 {
-    name: "Lorem Ipsum",
-    designation: "Lorem Ipsum Lorem",
-    description: " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, which allows designers to consider the form of a webpage or publication, without the meaning of the text influencing the design. Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.",
-    imgLink: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeZj1SB4KzSbjx_oKlZpyrOLlEL9K9DW0JA&usqp=CAU",
-    facebook: "www.facebook.com",
-    instagram: "www.instagram.com",
-    linkedin: "www.linkedin.com",
-    github: "www.github.com"
+    "name": "Lorem Ipsum",
+    "designation": "Lorem Ipsum Lorem",
+    "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.It may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, without the meaning of the text influencing the design.",
+    "imgLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeZj1SB4KzSbjx_oKlZpyrOLlEL9K9DW0JA&usqp=CAU",
+    "facebook": "www.facebook.com",
+    "instagram": "www.instagram.com",
+    "linkedin": "www.linkedin.com",
+    "github": "www.github.com"
 };
 
 export default WebTeam
