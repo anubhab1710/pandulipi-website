@@ -62,7 +62,7 @@
   .close {
     position:absolute;
     top: -1rem;
-    right: -.8rem;
+    right: -1rem;
     background-color: transparent;
     color: white;
     border-radius: 50%;
