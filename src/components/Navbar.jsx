@@ -1,13 +1,13 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import Logo from "../assets/img/Logo-Black.svg"
+import Logo from "../assets/img/Pandulipi Logo.png"
 
 function Navbar() {
     return (
         <nav className="sticky top-0 z-50 bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 drop-shadow-2xl">
             <div className="container flex flex-wrap items-center justify-between mx-auto">
                 <a href="" className="flex items-center">
-                    <img src={Logo} className="m-2 mr-4 h-14 w-14 rounded-full dark:bg-white" alt="Pandulipi Logo" />
+                    <img src={Logo} className="m-3 h-12 mt-0 xl:h-16" alt="Pandulipi Logo" />
                     <span className="self-center text-2xl md:text-3xl font-semibold whitespace-nowrap dark:text-white">Pandulipi</span>
                 </a>
                 <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-lg text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
