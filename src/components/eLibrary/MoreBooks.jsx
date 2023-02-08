@@ -144,7 +144,7 @@ const BookMore = () => {
 
     return (
         <div>
-            <h4>More Books From Pandulipi</h4>
+            <h4 className='text-center md:text-left md:pl-28'>More Books From Pandulipi</h4>
             <div id='row'>
                 {MoreBookDetails.map((details) => (
                     <div id='card'>

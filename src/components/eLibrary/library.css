@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,700,1,200");
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Courgette&family=Kalam&family=Source+Code+Pro:ital@1&family=Work+Sans:ital@1&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
 
 #canvas{
     background-color : #252b42;
@@ -8,12 +9,11 @@
 }
 
 h4{
-  font-family:'Times New Roman', Times, serif;
+  font-family:'Oranienbaum','Times New Roman', Times, serif;
   text-align: left;
   font-size: 2rem;
   color: aliceblue;
   margin-top: 4rem;
-  padding-left: 6rem;
 }
 
 #row {
@@ -37,6 +37,8 @@ h4{
 }
 #card:hover{
   transform: scale(1.05);
+  transition: all;
+  transition-duration: 150ms;
 }
 
 #card img:hover {opacity: 0.7;}
@@ -51,6 +53,9 @@ h4{
 }
 
 #card #button:hover{
+  transition: all;
+  transition-duration: 150ms;
+  scale: 120%;
   box-shadow: -1.3px 4px 4px 0px rgba(40, 38, 38, 0.5);
   background-color: hsl(133, 49%, 38%);
   cursor: pointer;
@@ -62,7 +67,7 @@ h4{
 
 #card .name{
   margin: 0.7rem 0rem 0rem 0rem;
-  font-family: 'Kalam', cursive;
+  font-family:'Oranienbaum', 'Kalam', cursive;
   font-size: large;
   font-weight: 900;
   color: black;
@@ -70,7 +75,7 @@ h4{
 #card .author{
   margin: 0.1rem 0rem;
   /* font-family: 'Kalam', cursive; */
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Oranienbaum','Work Sans', sans-serif;
   font-size: medium;
   font-weight: 900;
   color: black;
@@ -103,6 +108,8 @@ h4{
 }
 
 #loadmore:hover{
+  transition: all;
+  transition-duration: 150ms;
   color:black;
   font-weight: bold;
   background-color : whitesmoke;
