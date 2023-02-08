@@ -88,8 +88,8 @@ const WebTeam = () => {
                         <div className='flex flex-col items-center gap-4'>
                             <div className='relative'>
                                 <img src={details.imgLink} alt={details.name} className='rounded-full mx-auto  w-48 h-48' />
-                                <button onClick={() => { setShow(true) }} className='absolute bottom-4 right-0 rounded-full py-[6px] px-[15px] bg-transparent'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill='#fff' viewBox="0 0 20 20" className='white shadow-md rounded-full'>
+                                <button onClick={() => { setShow(true) }} className='absolute bottom-4 right-[-3px] rounded-full py-[6px] px-[15px] bg-transparent'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill='#fff' viewBox="0 0 20 20" className='white shadow-md rounded-full'>
                                         <path d="M10,20A10,10,0,1,0,0,10,10,10,0,0,0,10,20ZM4.049,9h8.559L10.342,6.735l1.414-1.414,4.735,4.733-4.735,4.734-1.414-1.414L12.718,11H4.049Z" />
                                     </svg>
                                 </button>
