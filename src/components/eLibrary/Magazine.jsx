@@ -45,7 +45,7 @@ const Magazine = () => {
 
     return (
         <div>
-            <h4>Latest Editions of Pandulipi</h4>
+            <h4 className='text-center md:text-left md:pl-28'>Latest Editions of Pandulipi</h4>
             <div>
                 <div id='row'>
                     {magazineDetails.map((details) => (

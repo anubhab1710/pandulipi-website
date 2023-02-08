@@ -99,7 +99,7 @@ const Books = () => {
     ]
     return (
         <div>
-            <h4>Latest Books of Pandulipi</h4>
+            <h4 className='text-center md:text-left md:pl-28'>Latest Books of Pandulipi</h4>
             <div>
                 <div id='row'>
                     {bookDetails.map((details) => (
