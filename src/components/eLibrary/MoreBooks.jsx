@@ -150,13 +150,13 @@ const BookMore = () => {
                     <div id='card'>
                         <div className='relative'>
                         <img src={details.imgLink} alt={details.name} />
-                                <a href = {details.downloadLink} id='button'className='absolute bottom-40 right-5 rounded-full py-[10px] px-[15px] bg-white shadow-md'>
+                                <a href = {details.downloadLink} id='button'className='absolute bottom-20 right-5 rounded-full py-[10px] px-[15px] bg-white shadow-md'>
                                     <span id='download' className="material-symbols-rounded">download</span>
                                 </a>
                                 <div className = 'details'>
                                     <p className='name'>{details.name}</p>
                                     <p className='author'><a href= {details.authorProfile}>{details.author}</a></p>
-                                    <p className='description'>{details.description}</p>
+                                    {/* <p className='description'>{details.description}</p> */}
                                     <div>
                                         <span className="fa fa-star checked"></span>
                                         <span className="fa fa-star checked"></span>

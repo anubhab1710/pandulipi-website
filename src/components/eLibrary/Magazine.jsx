@@ -56,8 +56,8 @@ const Magazine = () => {
                                     <span id='download' className="material-symbols-rounded">download</span>
                                 </a>
                                 <div className='details'>
-                                    <p className='name'>{details.name}</p>
-                                    <p className='year'>{details.year}</p>
+                                    <p className='text-2xl font-semibold'>{details.name}</p>
+                                    <p className='font-bold text-gray-700'>{details.year}</p>
                                     <div>
                                         <span className="fa fa-star checked"></span>
                                         <span className="fa fa-star checked"></span>
