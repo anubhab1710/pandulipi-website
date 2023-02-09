@@ -49,6 +49,7 @@ h4{
 }
 
 #card #button{
+  color: hsl(229, 50%, 21%);;
   box-shadow: -1.3px 4px 4px 0px rgba(40, 38, 38, 0.5)
 }
 
@@ -57,7 +58,8 @@ h4{
   transition-duration: 150ms;
   scale: 120%;
   box-shadow: -1.3px 4px 4px 0px rgba(40, 38, 38, 0.5);
-  background-color: hsl(133, 49%, 38%);
+  background-color: hsl(229, 50%, 21%);
+  color: aliceblue;
   cursor: pointer;
 }
 

@@ -9,7 +9,7 @@ function Hero2() {
                 <h1 className='text-4xl xl:text-8xl'>Pandulipi</h1>
                 <h2 className='text-2xl xl:text-6xl'>2021-2022</h2> 
             </div>
-            <a href="#" class="m-10 border-2 border-white text-white inline-flex justify-center items-center py-3 px-8 xl:py-4 xl:px-10  xl:text-2xl text-center transition-all hover:scale-110 hover:bg-white hover:text-black">
+            <a href="#" class="m-10 border-2 border-white text-white inline-flex justify-center items-center py-3 px-8 xl:py-4 xl:px-10  xl:text-2xl text-center transition-all hover:scale-110 hover:bg-white hover:text-[#252B42]">
                 Learn More
             </a>
         </div>

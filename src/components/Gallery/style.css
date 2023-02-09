@@ -58,7 +58,7 @@
 }
 
 
-.loadmore {
+/* .loadmore {
   margin: 1rem;
   text-align: center;
   font-size: large;
@@ -75,7 +75,7 @@
   box-shadow: 2px 2px 5px 3px #161826d6;
   cursor: pointer;
   transform: scale(1.05);
-}
+} */
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {

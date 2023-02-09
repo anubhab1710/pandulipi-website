@@ -35,13 +35,15 @@ function Navbar() {
                         <li>
                             <NavLink to="/team" className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" style={({ isActive }) => isActive ? { color: '#00B8FF ', fontWeight: 'bold' } : { color: 'white', fontWeight: 'normal' }}>Team</NavLink>
                         </li>
-                        <li>
-                            <NavLink to='/login' className="inline-block mt-3 md:mt-0 md:ml-10 mr-[-20px] px-6 py-2.5 bg-blue-600 text-white font-bold text-sm md:text-base leading-tight uppercase rounded shadow-md hover:bg-blue-800 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" >Login</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to='/signup' className="inline-block mt-3 md:mt-0 px-6 py-2 border-2 border-blue-600 text-blue-300 font-bold text-sm md:text-base leading-tight uppercase rounded hover:bg-blue-700 hover:bg-opacity-50 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" >Sign up</NavLink>
-                        </li>
+                        <div className='flex gap-x-5 visible lg:hidden'>
+                                <NavLink to='/login' className="inline-block mt-3 md:mt-0 md:ml-10  px-6 py-2.5 bg-blue-600 text-white font-bold text-sm md:text-base leading-tight uppercase rounded shadow-md hover:bg-blue-800 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" >Login</NavLink>
+                                <NavLink to='/signup' className="inline-block mt-3 md:mt-0 px-6 py-2 border-2 border-blue-600 text-blue-300 font-bold text-sm md:text-base leading-tight uppercase rounded hover:bg-blue-700 hover:bg-opacity-50 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" >Sign up</NavLink>
+                        </div>
                     </ul>
+                </div>
+                <div className='hidden lg:block'>
+                    <NavLink to='/login' className="inline-block mt-3 md:mt-0 md:ml-10 mr-4 px-6 py-2.5 bg-blue-600 text-white font-bold text-sm md:text-base leading-tight uppercase rounded shadow-md hover:bg-blue-800 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" >Login</NavLink>
+                    <NavLink to='/signup' className="inline-block mt-3 md:mt-0 px-6 py-2 border-2 border-blue-600 text-blue-300 font-bold text-sm md:text-base leading-tight uppercase rounded hover:bg-blue-700 hover:bg-opacity-50 focus:outline-none focus:ring-0 transition duration-150 ease-in-out" >Sign up</NavLink>
                 </div>
             </div>
         </nav>

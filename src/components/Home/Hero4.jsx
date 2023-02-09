@@ -33,7 +33,7 @@ function Hero4() {
     <div className="bg-[#295C7A]">
         <div className="text-white pb-20 flex flex-col items-center">
             <h2 className="text-5xl text-center p-10 xl:text-7xl">LATEST POSTS</h2>
-            <div className="flex overflow-x-scroll w-full gap-x-10 md:gap-x-20 p-10 md:px-20">
+            <div className="flex overflow-x-scroll scrollbar-hide w-full gap-x-10 md:gap-x-20 p-10 md:px-20">
                 {posts.map((post) => (
                     <LatestPostsCard title={post.title} content={post.content} imgLink={post.imgLink} postLink={post.postLink}/>
                 ))} 
