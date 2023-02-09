@@ -732,7 +732,7 @@ const Album1 = () => {
             </Modal>
             
             <div className='flex flex-wrap justify-center'>
-                <button type='button' className="loadmore" onClick={handleMoreImage}>{btnText}</button>
+                <button type='button' className="cursor-pointer inline-flex justify-center items-center py-3 px-8 xl:py-4 xl:px-10  xl:text-2xl text-center font-semibold border-2 border-white text-white hover:scale-110 transition-all hover:bg-white hover:text-[#224e68]" onClick={handleMoreImage}>{btnText}</button>
             </div>
         </>
     )

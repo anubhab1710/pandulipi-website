@@ -48,7 +48,7 @@ function Hero3() {
   return (
     <div className='bg-[#EEEEEE]'>
         <h2 className='text-5xl text-center p-10 text-[#295C7A] xl:text-7xl'>LATEST EVENTS</h2>
-        <div className='flex justify-start items-center overflow-x-scroll gap-x-10 p-5 pb-20'>
+        <div className='flex justify-start items-center overflow-x-scroll scrollbar-hide gap-x-10 p-5 pb-20'>
             {items.map((item) =>
                 <LatestEventCard key={item.animeId} link={item.animeImg} title={item.animeTitle}/>
             )}

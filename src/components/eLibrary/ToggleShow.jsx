@@ -13,9 +13,9 @@ export default function ToggleVisibility({ children }) {
   var buttonText = show ? "Show Less" : "Show More";
 
   return (
-    <div>
+    <div className="w-full flex flex-col items-center justify-center">
       {show && children}
-      <button id="loadmore" onClick={toggleShow}>{buttonText}</button>
+      <button className="m-10 border-2 border-white text-white inline-flex justify-center items-center py-3 px-8 xl:py-4 xl:px-10  xl:text-2xl text-center transition-all hover:scale-110 hover:bg-white hover:text-[#252B42]" onClick={toggleShow}>{buttonText}</button>
     </div>
   );
 }

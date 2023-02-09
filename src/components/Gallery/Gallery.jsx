@@ -23,6 +23,7 @@ const Gallery = () => {
                 <Route exact path="/album2" element={<Album2 />} />
                 <Route exact path="/album3" element={<Album3 />} />
             </Routes>
+            <div className='p-5' />
 
         </div>
 
