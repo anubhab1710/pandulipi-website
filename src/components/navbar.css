@@ -1,0 +1,4 @@
+#menu-toggle:checked ~ .hidden {
+    display: block;
+    text-align: center;
+  }
