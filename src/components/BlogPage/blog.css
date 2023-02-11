@@ -80,6 +80,14 @@
     transform: scale(1.05);
 }
 
+/* Start of styling for create blog page */
+.create-blog-container{
+    display: flex;
+    flex-direction: row;
+}
+/* Start of styling for create blog page */
+
+
 @media screen and (max-width: 900px){
     .bCard{
         flex : 45%;
@@ -103,7 +111,10 @@
     .form1 input[type=text]{
         width:100%;
     }
-
+    .create-blog-container{
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 
@@ -129,5 +140,12 @@
     }
     .form1 input[type=text]{
         width:100%;
+    }
+    .create-blog-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .create-blog-form input, .create-blog-form textarea{
+        width: 100%;
     }
 }
