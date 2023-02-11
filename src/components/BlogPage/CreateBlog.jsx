@@ -4,7 +4,6 @@ import './blog.css'
 const CreateBlog = () => {
     const [title, setTitle] = useState('');
     const [tags, setTags] = useState('');
-    const [blogTags, setBlogTags] = useState([]);
     const [content, setContent] = useState('');
     const [blogImg, setBlogImg] = useState('');
     function readImageAsBase64(e) {
@@ -30,20 +29,18 @@ const CreateBlog = () => {
 
     const PostBlogContent = async (e) => {
         e.preventDefault();
-        setBlogTags(tags.split(' '));
         try {
             const resp = await fetch('/blogs/', {
                 method: 'POST',
                 headers: {
                     "Content-type": "application/json",
                 },
-                body: JSON.stringify({ title, blogTags, content, blogImg })
+                body: JSON.stringify({ title, tags, content, blogImg })
             })
             const data = await resp.json();
             if (resp.ok) {
                 setTitle('')
                 setTags('')
-                setBlogTags('')
                 setContent('')
                 setBlogImg('')
 
@@ -57,7 +54,6 @@ const CreateBlog = () => {
         e.preventDefault();
         setTitle('')
         setTags('')
-        setBlogTags('')
         setContent('')
         setBlogImg('')
     }
