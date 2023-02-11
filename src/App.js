@@ -11,6 +11,7 @@ import Library from "./components/eLibrary/Library";
 import Error from "./components/Error";
 import Login from './components/Authentication/Login';
 import Signup from './components/Authentication/Signup';
+import CreateBlog from "./components/BlogPage/CreateBlog";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/gallery/*" element={<Gallery />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/createblog" element={<CreateBlog />} />
         <Route path="/elibrary" element={<Library />} />
         <Route path="/team" element={<Team />} />
         <Route path="/login" element={<Login />} />
