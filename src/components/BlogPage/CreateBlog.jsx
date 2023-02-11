@@ -4,9 +4,9 @@ import './blog.css'
 const CreateBlog = () => {
     return (
         <div className='flex justify-center bg-[#EEEEEE87]'>
-            <div className='flex flex-col p-6 '>
+            <div className='flex flex-col p-6 items-center'>
                 <div>
-                    <h1 className='text-5xl p-6 text-[#295C7A]'>Create Your Blog</h1>
+                    <h1 className='text-4xl p-6 text-[#295C7A]'>Create Your Blog</h1>
                 </div>
                 <div className='create-blog-container flex shadow-[1px_3px_7px_#4446] rounded p-4 w-[80vw] bg-[#EEEEEE] gap-4 md:flex sm:flex flex-col'>
                     <div className='flex flex-col items-center justify-center gap-4'>
