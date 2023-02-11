@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import BlogCard from './BlogCard'
 import './blog.css'
+import { NavLink } from 'react-router-dom'
 
 const BlogPage = () => {
 
@@ -335,17 +336,17 @@ const BlogPage = () => {
   const [btnText, setBtnText] = useState("Load More");
 
   const handleOnClick = () => {
-    if(iter < Math.floor(blogList.length/items)-2){
-        setBtnText('Load More');
-        setNum(num+items)
-        setIter(iter+1)
+    if (iter < Math.floor(blogList.length / items) - 2) {
+      setBtnText('Load More');
+      setNum(num + items)
+      setIter(iter + 1)
     }
-    else if(iter < Math.floor(blogList.length/items)-1){
-        setBtnText('Show Less');
-        setNum(num+items)
-        setIter(iter+1)
+    else if (iter < Math.floor(blogList.length / items) - 1) {
+      setBtnText('Show Less');
+      setNum(num + items)
+      setIter(iter + 1)
     }
-    else{
+    else {
       setNum(items);
       setBtnText('Load More');
       setIter(0)
@@ -361,9 +362,7 @@ const BlogPage = () => {
           {/* <input type="text" id="tagName" name="tagName" placeholder='Search Tags' /> */}
           <input type="submit" value="Search" />
         </form>
-          <button type='button' onClick=''>
-            Create Blog
-          </button>
+        <NavLink to='/createblog' className='create-blog-btn flex items-center' >Create Blog</NavLink>
       </div>
       <div className='blogcards'>
         {blogList.slice(0, num).map((element) => (
