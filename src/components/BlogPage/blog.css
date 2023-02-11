@@ -52,6 +52,7 @@
     flex: 50%;
     max-width: 50%;
     display:flex;
+    justify-content: center;
 }
 
 .form1 input[type=text]{
@@ -133,7 +134,8 @@
         max-width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
+        margin-top: 10px;
     }
     .blogNav button, input[type=submit] {
         margin: 1rem 0rem;
