@@ -39,43 +39,15 @@
 }
 
 .album_name {
-  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-weight: normal;
   padding: 2px 9px;
-  border-bottom: 3px solid rgba(255, 255, 255, 0);
-}
-
-.album_name:hover {
-  transform: scale(1.25)
 }
 
 .album_name:active,
 .album_name:focus {
-  color: antiquewhite;
-  background-color: rgba(0, 0, 0, 0.1);
-  transform: scale(1.25);
-  font-weight: 100;
-  border-bottom: 3px solid antiquewhite; 
+  border-bottom: 2px solid #fff; 
 }
-
-
-/* .loadmore {
-  margin: 1rem;
-  text-align: center;
-  font-size: large;
-  padding: 0.3rem 1.5rem;
-  color: antiquewhite;
-  border: 3px solid antiquewhite;
-  box-shadow: 2px 2px 5px 3px #161826d6;
-}
-
-.loadmore:hover {
-  color: black;
-  font-weight: bolder;
-  background-color: whitesmoke;
-  box-shadow: 2px 2px 5px 3px #161826d6;
-  cursor: pointer;
-  transform: scale(1.05);
-} */
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
