@@ -2,6 +2,8 @@
 #blog{
     background-color: whitesmoke;
     border-radius: 6px;
+    justify-content: start;
+    justify-items: start;
 }
 
 #blog img{
