@@ -9,7 +9,6 @@ export default function BlogCard(props) {
           <span>{props.author}</span>
           <span></span>
         </div>
-        <div className="font-normal">{props.time}</div>
       </div>
       <div id="blog">
         <img src={props.imgLink} alt={props.name} />
@@ -25,7 +24,7 @@ export default function BlogCard(props) {
             ))}
           </div>
           <h1 className="text-2xl text-bold text-#F0F8FF my-1">
-            {props.title}...
+            {props.title}
           </h1>
           <div className="flex flex-wrap my-1">{props.content}...</div>
 
