@@ -76,14 +76,14 @@ const CreateBlog = () => {
                     </div>
                     <form className='create-blog-form flex flex-col gap-6'>
                         <div>
-                            <input type='text' placeholder='Title of blog...' name='title' className='rounded px-4 py-2 shadow-[inset_-1px_-1px_4px_#4446] border-none text-[#295C7A] w-[50vw] placeholder:text-[#295C7A] hover:cursor-pointer hover:font-bold focus:outline-none' value={title} onChange={(e) => setTitle(e.target.value)} />
+                            <input type='text' placeholder='Title of blog' name='title' className='rounded px-4 py-2 shadow-[inset_-1px_-1px_4px_#4446] border-none text-[#295C7A] w-[50vw] placeholder:text-[#295C7A] focus:ring-0' value={title} onChange={(e) => setTitle(e.target.value)} />
                         </div>
                         <div>
-                            <input type='text' placeholder='Tags...' name='tags' className='rounded px-4 py-2 shadow-[inset_-1px_-1px_4px_#4446] border-none text-[#295C7A] w-[50vw] placeholder:text-[#295C7A] hover:cursor-pointer hover:font-bold focus:outline-none' value={tags} onChange={(e) => setTags(e.target.value)} />
+                            <input type='text' placeholder='Tags' name='tags' className='rounded px-4 py-2 shadow-[inset_-1px_-1px_4px_#4446] border-none text-[#295C7A] w-[50vw] placeholder:text-[#295C7A] focus:ring-0' value={tags} onChange={(e) => setTags(e.target.value)} />
 
                         </div>
                         <div>
-                            <textarea placeholder='Content...' name='content' className='rounded px-4 py-2 shadow-[inset_-1px_-1px_4px_#4446] border-none text-[#295C7A] w-[50vw] placeholder:text-[#295C7A] hover:cursor-pointer hover:font-bold focus:outline-none' rows='10' cols='80' value={content} onChange={(e) => setContent(e.target.value)} ></textarea>
+                            <textarea placeholder='Content' name='content' className='rounded px-4 py-2 shadow-[inset_-1px_-1px_4px_#4446] border-none text-[#295C7A] w-[50vw] placeholder:text-[#295C7A] focus:ring-0' rows='10' cols='80' value={content} onChange={(e) => setContent(e.target.value)} ></textarea>
                         </div>
                         <div className='flex mt-4 gap-4'>
                             <button className='border font-semibold border-[#295C7A] rounded justify-center items-center py-2 text-[#295C7A] hover:bg-[#295C7A] hover:text-white w-full' onClick={PostBlogContent}>SAVE</button>

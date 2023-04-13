@@ -1,4 +1,3 @@
-
 #blog{
     background-color: whitesmoke;
     border-radius: 6px;
@@ -34,85 +33,22 @@
 }
 
 .Top-head{
-    color: antiquewhite;
+    color: white;
     position: absolute;
     top: 1;
-    padding: 0.3rem 1rem;
+    padding: 0.5rem 1rem;
     z-index: 1;
 }
-.readMore{
-    margin: 2px;
-    color: antiquewhite;
-    background-color: rgb(19, 95, 225);
-    border-radius: 5px; 
-    width: 30%;
-    padding: 2px;
-    text-align: center;
-}
 
-.form1{
-    flex: 50%;
-    max-width: 50%;
-    display:flex;
-    justify-content: center;
-}
-
-.form1 input[type=text]{
-    color:black;
-    width: 100%;
-    /* height: 50%; */
-    align-items: center;
-}
-
-.blogNav .create-blog-btn, input[type=submit] {
-    margin: 0rem 1rem;
-    text-align: center;
-    font-size: large;
-    padding: 0.1rem 1.5rem;
-    color: antiquewhite;
-    border: 3px solid antiquewhite;
-    box-shadow: 2px 2px 5px 3px #161826d6;
-}
-  
-.blogNav .create-blog-btn:hover, input[type=submit]:hover {
-    color: black;
-    font-weight: bolder;
-    background-color: whitesmoke;
-    box-shadow: 2px 2px 5px 3px #161826d6;
-    cursor: pointer;
-    transform: scale(1.05);
-}
-
-/* Start of styling for create blog page */
 .create-blog-container{
     display: flex;
     flex-direction: row;
 }
-/* Start of styling for create blog page */
-
 
 @media screen and (max-width: 900px){
     .bCard{
         flex : 45%;
         max-width: 45%;
-    }
-    .blogNav{
-        display: flex;
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-    }
-    .form1{
-        flex: 100%;
-        max-width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .blogNav button, input[type=submit] {
-        margin: 1rem 0rem;
-    }
-    .form1 input[type=text]{
-        width:100%;
     }
     .create-blog-container{
         display: flex;
@@ -120,30 +56,10 @@
     }
 }
 
-
 @media screen and (max-width: 600px){
     .bCard{
         flex : 90%;
         max-width: 90%;
-    }
-    .blogNav{
-        display: flex;
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-    }
-    .form1{
-        flex: 100%;
-        max-width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 10px;
-    }
-    .blogNav button, input[type=submit] {
-        margin: 1rem 0rem;
-    }
-    .form1 input[type=text]{
-        width:100%;
     }
     .create-blog-container{
         display: flex;

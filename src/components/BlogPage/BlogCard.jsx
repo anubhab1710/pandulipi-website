@@ -9,6 +9,7 @@ export default function BlogCard(props) {
           <span>{props.author}</span>
           <span></span>
         </div>
+        <div className="font-normal">{props.time}</div>
       </div>
       <div id="blog">
         <img src={props.imgLink} alt={props.name} />
@@ -31,7 +32,7 @@ export default function BlogCard(props) {
           <button
             type="button"
             href="#"
-            class="text-white text-sm font-semibold tracking-wider bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            class="text-white text-sm font-semibold tracking-wider bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-0 rounded-lg px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
           >
             View Blog
           </button>

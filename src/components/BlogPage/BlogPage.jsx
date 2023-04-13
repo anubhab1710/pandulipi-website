@@ -9,7 +9,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -22,7 +22,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -35,7 +35,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -48,7 +48,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -61,7 +61,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -74,7 +74,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -87,7 +87,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -100,7 +100,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -113,7 +113,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -126,7 +126,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -139,7 +139,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -152,7 +152,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -165,7 +165,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -178,7 +178,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -191,7 +191,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -204,7 +204,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -217,7 +217,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -230,7 +230,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -243,7 +243,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -256,7 +256,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -269,7 +269,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -282,7 +282,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -295,7 +295,7 @@ const BlogPage = () => {
       id: "6564543",
       author: "Lorem Ipsum",
       title:
-        "The Sunset is Like Beauty jbjsjdfjsjsjknjknjsnjnfdjnjdfn dkjfkjhgjhjhkdfhkhfdf",
+        "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -342,7 +342,7 @@ const BlogPage = () => {
             id="blogName"
             name="blogName"
             placeholder="Search Blogs"
-            className="rounded-l-full flex-1 border-none"
+            className="rounded-l-full flex-1 border-none focus:ring-0"
           />
           <a className="h-auto border-none flex items-center justify-center bg-white px-5 py-2 rounded-r-full hover:cursor-pointer">
             <svg
@@ -354,12 +354,10 @@ const BlogPage = () => {
               <path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path>
             </svg>
           </a>
-          {/* <input type="text" id="tagName" name="tagName" placeholder='Search Tags' /> */}
-          {/* <input type="submit" value="Search" /> */}
         </form>
         <NavLink
           to="/createblog"
-          className="text-white text-xl mt-5 ring-2 px-8 py-1.5 rounded-full ring-white flex items-center"
+          className="text-white text-xl mt-5 border-2 px-8 py-1.5 rounded-full border-white flex items-center hover:scale-110 transition-all hover:bg-white hover:text-[#224e68]"
         >
           Create Blog
         </NavLink>
