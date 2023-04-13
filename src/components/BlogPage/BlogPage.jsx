@@ -334,7 +334,7 @@ const BlogPage = () => {
       </h1>
       <div className="blogNav flex flex-col items-center justify-center m-10">
         <form
-          className="flex w-full max-w-4xl justify-center items-center mb-5"
+          className="flex w-full max-w-xl justify-center items-center mb-5"
           action=""
         >
           <input
@@ -342,20 +342,24 @@ const BlogPage = () => {
             id="blogName"
             name="blogName"
             placeholder="Search Blogs"
-            className="rounded-l-full flex-1"
+            className="rounded-l-full flex-1 border-none"
           />
-          <button className="h-auto flex items-center justify-center bg-white px-5 py-2 rounded-r-full hover:cursor-pointer">
-            <img
-              className="scale-110"
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAAAE+SURBVEhL3ZTtEQExEIZdBZRABejgdEAFdIAO6IAO6EAHqIAOXAlUwD4zG7Nz8uHj+CEzO7mP5H02bzbJal9u2Zf1azFAU+BjiVyio4kcpd9JLCWKZ5ILARYqHtNgzDQF8QHIsq0T19IjxDcaK5lIDM2KujFIGeAyv6g1TrisAQir6moXUG+zgKaMOOkosgqJOyEgB31pSV/4CBbgsmcDgxmVRFZqV3COBTjvn8m+vArmevfCAq4669WzEZ1XFYCiaKT24BOL9lp1D4yfbvK7ZYo9lGyyTFmeK9WzPPciZwHBrfo+l37m859vqauCOqfG7VXBBTgygvwjGZKK7oH9mbrssIUxfQnurSAkdV1zonMVQRQhAvFCLdrFIK8eKp8L1H8QUgUAqIUM5H3jMqkK4CDYeRfnY5UAn31/ALgBCXxMGWK60r4AAAAASUVORK5CYII="
-            />
-          </button>
+          <a className="h-auto border-none flex items-center justify-center bg-white px-5 py-2 rounded-r-full hover:cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path>
+            </svg>
+          </a>
           {/* <input type="text" id="tagName" name="tagName" placeholder='Search Tags' /> */}
           {/* <input type="submit" value="Search" /> */}
         </form>
         <NavLink
           to="/createblog"
-          className="text-white ring-2 px-6 py-1.5 rounded-full ring-white flex items-center"
+          className="text-white text-xl mt-5 ring-2 px-8 py-1.5 rounded-full ring-white flex items-center"
         >
           Create Blog
         </NavLink>
@@ -378,7 +382,7 @@ const BlogPage = () => {
       <div className="flex flex-wrap justify-center mb-10">
         <button
           type="button"
-          className="cursor-pointer inline-flex justify-center items-center py-3 px-8 xl:py-4 xl:px-10  xl:text-2xl text-center font-semibold border-2 border-white text-white hover:scale-110 transition-all hover:bg-white hover:text-[#224e68]"
+          className="cursor-pointer inline-flex justify-center items-center py-3 px-8  xl:text-xl text-center font-semibold border-2 border-white text-white hover:scale-110 transition-all hover:bg-white hover:text-[#224e68]"
           onClick={handleOnClick}
         >
           {btnText}
