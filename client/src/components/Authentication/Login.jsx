@@ -4,16 +4,16 @@ import logo from "../../assets/img/Logo - White.png";
 const Login = () => {
   return (
     <>
-      <div className="flex justify-center items-center max-h-fit w-screen bg-[#252b42] p-5 ">
+      <div className="flex justify-center items-center max-h-fit h-screen sm:h-fit w-screen bg-[#252b42] p-5 ">
         <div className="flex-col items-center justify-center rounded-xl max-w-lg bg-[#fff] shadow-[0_0_10px_#00000080]">
           <div className="bg-[#295C7Acc]  flex items-center justify-center rounded-t-xl">
             <img src={logo} className="w-9/12" alt="Pandulipi logo" />
           </div>
           <div className="flex flex-col items-center justify-center  pt-4 pb-6 w-full">
-            <span class="text-4xl font-semibold whitespace-nowrap dark:text-[#295C7A]">
+            <span class="text-4xl xl:text-5xl font-semibold whitespace-nowrap dark:text-[#295C7A]">
               Pandulipi
             </span>
-            <h1 className="text-center text-2xl py-3 font-semibold ">
+            <h1 className="text-center text-2xl xl:text-3xl py-3 font-semibold ">
               Login to your account
             </h1>
             <div className="flex flex-col gap-y-3 w-full items-center">
@@ -34,7 +34,7 @@ const Login = () => {
                   type="email"
                   placeholder="Enter your email"
                   name="email"
-                  className="p-3 pl-10 text-black font-medium w-full bg-[#295C7A] bg-opacity-10 rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
+                  className="p-3 pl-10 text-black font-medium w-80 sm:w-96 bg-[#295C7A] bg-opacity-10 rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
                 />
               </div>
               <div className="relative">
@@ -53,7 +53,7 @@ const Login = () => {
                   type="password"
                   placeholder="Enter your password"
                   name="password"
-                  className="p-3 pl-10 text-black font-medium bg-[#295C7A] bg-opacity-10 w-full rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
+                  className="p-3 pl-10 text-black font-medium bg-[#295C7A] bg-opacity-10 w-80 sm:w-96 rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
                 />
               </div>
               <div>
@@ -67,7 +67,7 @@ const Login = () => {
               <div>
                 <button
                   type="submit"
-                  className="text-white py-1 px-6 text-2xl w-full bg-[#295C7A] hover:bg-[#252b42] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+                  className="text-white py-2 px-6 font-bold text-lg w-full bg-[#295C7A] hover:bg-[#252b42] focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg  sm:w-auto  text-center"
                 >
                   Login
                 </button>
