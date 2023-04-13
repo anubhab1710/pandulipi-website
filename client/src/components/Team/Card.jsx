@@ -18,7 +18,7 @@ const Card = (props) => {
                     <div class="w-full md:w-3/5 text-left p-6 md:p-4 space-y-2">
                         <p class="text-xl text-white font-bold">{props.name}</p>
                         <p class="text-base text-gray-400 font-normal">{props.designation}</p>
-                        <p class="text-base leading-relaxed text-gray-500 font-normal mb-4">{props.description}</p>
+                        <p class="text-base leading-relaxed text-gray-500 font-normal mb-4">{props.department}</p>
                         <div class="flex justify-start items-center space-x-5" style={{ marginTop: "1rem" }}>
                             <a href={props.facebook} class="text-gray-500 hover:text-gray-600">
                                 <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">

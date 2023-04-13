@@ -5,77 +5,50 @@ const WebTeam = () => {
     const [show, setShow] = useState(false)
     const webTeamDetails = [
         {
-            "name": "Lorem Ipsum",
-            "designation": "Lorem Ipsum Lorem",
-            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.It may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, without the meaning of the text influencing the design.",
+            "name": "WASIM REJA",
+            "designation": "Frontend Lead",
+            "department": "Information Technology",
             "imgLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeZj1SB4KzSbjx_oKlZpyrOLlEL9K9DW0JA&usqp=CAU",
-            "facebook": "www.facebook.com",
-            "instagram": "www.instagram.com",
-            "linkedin": "www.linkedin.com",
-            "github": "www.github.com"
+            "facebook": "",
+            "instagram": "",
+            "linkedin": "",
+            "github": ""
         }, {
-            "name": "Lorem Ipsum",
-            "designation": "Lorem Ipsum Lorem",
-            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.It may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, without the meaning of the text influencing the design.",
+            "name": "SAMRAT SADHU",
+            "designation": "Backend Lead",
+            "department": "Electronics & Communication Engineering",
             "imgLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeZj1SB4KzSbjx_oKlZpyrOLlEL9K9DW0JA&usqp=CAU",
-            "facebook": "www.facebook.com",
-            "instagram": "www.instagram.com",
-            "linkedin": "www.linkedin.com",
-            "github": "www.github.com"
+            "facebook": "",
+            "instagram": "",
+            "linkedin": "",
+            "github": ""
         }, {
-            "name": "Lorem Ipsum",
-            "designation": "Lorem Ipsum Lorem",
-            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.It may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, without the meaning of the text influencing the design.",
+            "name": "ARJUN CHOUDHURY",
+            "designation": "Frontend Developer",
+            "department": "Information Technology",
             "imgLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeZj1SB4KzSbjx_oKlZpyrOLlEL9K9DW0JA&usqp=CAU",
-            "facebook": "www.facebook.com",
-            "instagram": "www.instagram.com",
-            "linkedin": "www.linkedin.com",
-            "github": "www.github.com"
+            "facebook": "",
+            "instagram": "",
+            "linkedin": "",
+            "github": ""
         }, {
-            "name": "Lorem Ipsum",
-            "designation": "Lorem Ipsum Lorem",
-            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.It may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, without the meaning of the text influencing the design.",
+            "name": "ATRI SUKUL",
+            "designation": "Backend Developer",
+            "department": "Computer Science & Engineering",
             "imgLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeZj1SB4KzSbjx_oKlZpyrOLlEL9K9DW0JA&usqp=CAU",
-            "facebook": "www.facebook.com",
-            "instagram": "www.instagram.com",
-            "linkedin": "www.linkedin.com",
-            "github": "www.github.com"
+            "facebook": "",
+            "instagram": "",
+            "linkedin": "",
+            "github": ""
         }, {
-            "name": "Lorem Ipsum",
-            "designation": "Lorem Ipsum Lorem",
-            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.It may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, without the meaning of the text influencing the design.",
+            "name": "SAYAN KUMAR BHOWMICK",
+            "designation": "Frontend Developer",
+            "department": "Computer Science & Engineering",
             "imgLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeZj1SB4KzSbjx_oKlZpyrOLlEL9K9DW0JA&usqp=CAU",
-            "facebook": "www.facebook.com",
-            "instagram": "www.instagram.com",
-            "linkedin": "www.linkedin.com",
-            "github": "www.github.com"
-        }, {
-            "name": "Lorem Ipsum",
-            "designation": "Lorem Ipsum Lorem",
-            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.It may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, without the meaning of the text influencing the design.",
-            "imgLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeZj1SB4KzSbjx_oKlZpyrOLlEL9K9DW0JA&usqp=CAU",
-            "facebook": "www.facebook.com",
-            "instagram": "www.instagram.com",
-            "linkedin": "www.linkedin.com",
-            "github": "www.github.com"
-        }, {
-            "name": "Lorem Ipsum",
-            "designation": "Lorem Ipsum Lorem",
-            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.It may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, without the meaning of the text influencing the design.",
-            "imgLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeZj1SB4KzSbjx_oKlZpyrOLlEL9K9DW0JA&usqp=CAU",
-            "facebook": "www.facebook.com",
-            "instagram": "www.instagram.com",
-            "linkedin": "www.linkedin.com",
-            "github": "www.github.com"
-        }, {
-            "name": "Lorem Ipsum",
-            "designation": "Lorem Ipsum Lorem",
-            "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.It may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, without the meaning of the text influencing the design.",
-            "imgLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeZj1SB4KzSbjx_oKlZpyrOLlEL9K9DW0JA&usqp=CAU",
-            "facebook": "www.facebook.com",
-            "instagram": "www.instagram.com",
-            "linkedin": "www.linkedin.com",
-            "github": "www.github.com"
+            "facebook": "",
+            "instagram": "",
+            "linkedin": "",
+            "github": ""
         },
     ]
 
@@ -96,7 +69,7 @@ const WebTeam = () => {
                             </div>
                             <div>
                                 <p className='text-center font-bold text-[#fff]'>{details.name}</p>
-                                <p className='text-[#fff]'>{details.designation}</p>
+                                <p className='text-center text-[#fff]'>{details.designation}</p>
                             </div>
                         </div>
                     ))}
@@ -112,12 +85,12 @@ Card.defaultProps =
 {
     "name": "Lorem Ipsum",
     "designation": "Lorem Ipsum Lorem",
-    "description": " Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.It may be used as a placeholder before final copy is available. It is also used to temporarily replace text in a process called greeking, without the meaning of the text influencing the design.",
+    "department": "Lorem Ipsum",
     "imgLink": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWeZj1SB4KzSbjx_oKlZpyrOLlEL9K9DW0JA&usqp=CAU",
-    "facebook": "www.facebook.com",
-    "instagram": "www.instagram.com",
-    "linkedin": "www.linkedin.com",
-    "github": "www.github.com"
+    "facebook": "",
+    "instagram": "",
+    "linkedin": "",
+    "github": ""
 };
 
 export default WebTeam
