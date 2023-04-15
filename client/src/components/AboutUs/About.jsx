@@ -1,4 +1,6 @@
 import React from "react";
+import President from "../../assets/img/IMG_7670.jpg";
+import VicePresident from "../../assets/img/IMG_7689.jpg";
 
 function About() {
   return (
@@ -18,7 +20,7 @@ function About() {
         <div className="flex flex-col items-center">
           <div className="flex flex-col justify-center items-center xl:flex-row">
             <img
-              src="https://www.navidkp.com/wp-content/uploads/2020/12/The-Almanack-of-Naval-Ravikant-Cover-Image-200x300.png"
+              src={President}
               alt=""
               className="visible xl:visible lg:h-[310px] m-10"
             />
@@ -39,13 +41,13 @@ function About() {
           <div className="p-10">
             <p className="lg:text-left text-xl text-center max-w-6xl ">
             PANDULIPI displays our students' potential and sends a message to the society that JGEC students are going to be the future leaders. Pandulipi depicts the JGEC students' wholesome development. JGEC is committed to upholding the tradition so that our students can get the ability to use information effectively and efficiently for the benefit of society
-              at large. Under the leadership of the faculty coordinator and student mentors, the Pandulipi team exercises
-              sustainability issues and plays a crucial role by joining a new batch
-              PANDULIPI has been strenuously crafted and assisted by the alumnus of our college. It is through this Magazine Club that our alumnus still maintains a consolidated relationship with several cultural activities of our college including
-              Rabindra Sangeet, folk dance, recitation, poetry and other creative spheres of life. This forms a platform to unveil the
-              prodigious talents of our students and encourages them to pursue their extra-curricular activities besides studies.
-              I would also like to encourage all the students of JGEC to actively participate in the events organised by this club, as it
-              could spread the crucial message of mental growth along with physical amelioration to a larger section of the society.
+            at large. Under the leadership of the faculty coordinator and student mentors, the Pandulipi team exercises
+            sustainability issues and plays a crucial role by joining a new batch
+            PANDULIPI has been strenuously crafted and assisted by the alumnus of our college. It is through this Magazine Club that our alumnus still maintains a consolidated relationship with several cultural activities of our college including
+            Rabindra Sangeet, folk dance, recitation, poetry and other creative spheres of life. This forms a platform to unveil the
+            prodigious talents of our students and encourages them to pursue their extra-curricular activities besides studies.
+            I would also like to encourage all the students of JGEC to actively participate in the events organised by this club, as it
+            could spread the crucial message of mental growth along with physical amelioration to a larger section of the society.
             </p>
           </div>
         </div>
@@ -57,7 +59,7 @@ function About() {
         <div className="flex flex-col items-center">
           <div className="flex flex-col justify-center items-center xl:flex-row-reverse">
             <img
-              src="https://www.navidkp.com/wp-content/uploads/2020/12/The-Almanack-of-Naval-Ravikant-Cover-Image-200x300.png"
+              src={VicePresident}
               alt=""
               className="visible xl:visible lg:h-[310px] m-10"
             />

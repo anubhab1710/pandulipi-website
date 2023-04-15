@@ -74,30 +74,6 @@ h4{
   font-weight: 900;
   color: black;
 }
-#card .author{
-  margin: 0.1rem 0rem;
-  /* font-family: 'Kalam', cursive; */
-  font-family: 'Oranienbaum','Work Sans', sans-serif;
-  font-size: medium;
-  font-weight: 900;
-  color: rgb(83, 83, 83);
-
-}
-#card .description{
-  margin: 0.5rem 0rem;
-  /* font-family: 'Kalam', cursive; */
-  font-size: smaller;
-  font-weight: 900;
-  color: black;
-}
-
-.checked{
-  color : orange;
-}
-.unchecked{
-  color: rgba(255, 166, 0, 0.534);
-  /* border: orange; */
-}
 
 #loadmore{
   text-align: center;
