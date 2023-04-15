@@ -1,7 +1,6 @@
 import React from "react";
 // import { Routes, Route } from "react-router-dom";
 import Magazine from "./Magazine";
-import Books from "./Books";
 import "./library.css";
 
 const Library = () => {
@@ -17,7 +16,6 @@ const Library = () => {
         </a>
       </div>
       <Magazine />
-      <Books />
     </div>
   );
 };
