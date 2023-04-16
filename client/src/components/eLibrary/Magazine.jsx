@@ -2,38 +2,44 @@ import React from "react";
 import "./library.css";
 import ToggleVisibility from "./ToggleShow";
 import MagazineMore from "./MoreMagazines";
+import cover_2022 from "../../assets/img/2022.png";
+import cover_2021 from "../../assets/img/2021.png";
+import cover_2020 from "../../assets/img/2020.png";
+import cover_2019 from "../../assets/img/2019.png";
+import cover_2018 from "../../assets/img/2018.png";
+import cover_2016 from "../../assets/img/2016.png";
+import cover_2014 from "../../assets/img/2014.png";
+import cover_1990 from "../../assets/img/1990.png";
+import cover_1985 from "../../assets/img/1985.png";
+import cover_1982 from "../../assets/img/1982.png";
 
 const Magazine = () => {
   const magazineDetails = [
     {
       name: "Pandulipi",
       year: "2022",
-      imgLink:
-        "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/contemporary-fiction-night-time-book-cover-design-template-1be47835c3058eb42211574e0c4ed8bf_screen.jpg?ts=1637012564",
+      imgLink: cover_2022,
       downloadLink:
         "https://drive.google.com/file/d/1_Vns8sZ8BR2LQG0Lb7Xu1BCue30P1Vsm/view?usp=share_link",
     },
     {
       name: "Pandulipi",
       year: "2021",
-      imgLink:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsf8N7-q8AKvxahFanHJNnJLMRYas7H7MRwQ&usqp=CAU",
+      imgLink: cover_2021,
       downloadLink:
         "https://drive.google.com/file/d/1Jc6S6R1M8i8KdoAQErpLP5mLN2-ew-Sj/view?usp=share_link",
     },
     {
       name: "Pandulipi",
       year: "2020",
-      imgLink:
-        "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/contemporary-fiction-night-time-book-cover-design-template-1be47835c3058eb42211574e0c4ed8bf_screen.jpg?ts=1637012564",
+      imgLink: cover_2020,
       downloadLink:
         "https://drive.google.com/file/d/1zQoMh1adIQATjMWDGpNwS9SvPK2b4osV/view?usp=share_link",
     },
     {
       name: "Pandulipi",
       year: "2019",
-      imgLink:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsf8N7-q8AKvxahFanHJNnJLMRYas7H7MRwQ&usqp=CAU",
+      imgLink: cover_2019,
       downloadLink:
         "https://drive.google.com/file/d/1SzjOeg_rO8C1nhaj24hkkNU5HREWrQFH/view?usp=share_link",
     },
