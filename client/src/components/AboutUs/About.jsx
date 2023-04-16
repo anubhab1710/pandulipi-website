@@ -5,7 +5,7 @@ import VicePresident from "../../assets/img/IMG_7689.jpg";
 function About() {
   return (
     <>
-      <div className="bg-[#EEEEEE]  w-full">
+      <div className="bg-[#252B42] text-white">
         <h1 className="text-center text-5xl p-10 ">About Us</h1>
         <div className="flex flex-col justify-center pb-10 items-center xl:flex-row-reverse">
           <div className="text-xl max-w-4xl text-center m-10 xl:text-left">
@@ -15,7 +15,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="bg-[#252B42] text-white">
+      <div className="bg-[#EEEEEE]">
         <h1 className="text-center text-5xl p-10">From the President's Desk</h1>
         <div className="flex flex-col items-center">
           <div className="flex flex-col justify-center items-center xl:flex-row">
@@ -49,10 +49,17 @@ function About() {
             I would also like to encourage all the students of JGEC to actively participate in the events organised by this club, as it
             could spread the crucial message of mental growth along with physical amelioration to a larger section of the society.
             </p>
+            <br />
+            <p className="text-xl text-center max-w-7xl font-semibold lg:text-left">
+              Dr. Amitava Ray
+            </p>
+            <p className="text-xl text-center max-w-7xl font-semibold lg:text-left">
+              Principal, JGEC
+            </p>
           </div>
         </div>
       </div>
-      <div className="bg-[#EEEEEE] ">
+      <div className="bg-[#252B42] text-white">
         <h1 className="text-center text-5xl p-10">
           From the Vice President's Desk
         </h1>
@@ -67,55 +74,14 @@ function About() {
               <p>
               লেখার জন্য কি প্রয়োজন? কাগজ আর কলম? আর কিছু নয়? অনুভূতি লাগেনা? অনুভব করার ক্ষমতা? আর সেই অনুভব করবার শক্তি থাকলে কি পারিপার্শ্বিকতা বাদ পড়ে? একজন লেখকের পারিপার্শ্বিকতা কতদূর পর্যন্ত বিস্তৃত? তার জেলা, রাজ্য, দেশ? নাকি সারা পৃথিবী জুড়ে তার বিস্তার? লেখকের অনুভূতির গণ্ডি তার বাইরেও ছড়িয়ে। অনুভব শক্তির বলে লেখকই কি যথার্থ বিশ্বনাগরিক নয়? এবং এর জন্যই কি সব সমস্যায় লেখকই সবার আগে আক্রান্ত হয়? সকল সামাজিক সমস্যার সমাধানে লেখকই সবার আগে এগিয়ে যায়। লেখক তার অনুভূতি দিয়ে, ভাবনা দিয়ে, কল্পনা দিয়ে যে সমাধান ভাবে, বিজ্ঞান ও প্রযুক্তি কি সেটাই বাস্তবায়িত করে না? করোনার আবির্ভাবে মানব সভ্যতা আজ যেভাবে ধ্বংসের মুখে এসে দাঁড়িয়েছে সাহিত্যকেও আজ এগিয়ে আসতে হবে। সাহিত্য তার স্বভাবসিদ্ধ পথে এগিয়ে এসে আজও সমাধানের পথ দেখাক, সাহস জুগাক, আমাদের মানসিকভাবে প্রস্তুত করুক। সাহিত্যের কাছে, লেখকের কাছে, আজকের দিনে এটাই আমাদের প্রত্যাশা থাকবে।
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="bg-[#252B42] text-white">
-        <h1 className="text-center text-5xl p-10">From the Secretary's Desk</h1>
-        <div className="flex flex-col items-center">
-          <div className="flex flex-col justify-center items-center xl:flex-row">
-            <img
-              src="https://www.navidkp.com/wp-content/uploads/2020/12/The-Almanack-of-Naval-Ravikant-Cover-Image-200x300.png"
-              alt=""
-              className="visible xl:visible lg:h-[310px] m-10"
-            />
-            <div className="max-w-4xl text-xl text-center m-10 xl:text-left">
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
-                recusandae adipisci mollitia, deserunt quaerat repellat expedita
-                nemo consectetur pariatur nulla odit minima sint asperiores
-                suscipit voluptates deleniti provident, dicta facilis.Lorem
-                ipsum dolor sit, amet consectetur adipisicing elit. Ad
-                recusandae adipisci mollitia, deserunt quaerat repellat expedita
-                nemo consectetur pariatur nulla odit minima sint asperiores
-                suscipit voluptates deleniti provident, dicta facilis.Lorem
-                ipsum dolor sit, amet consectetur adipisicing elit. Ad
-                recusandae adipisci
-              </p>
               <br />
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
-                recusandae adipisci mollitia, deserunt quaerat repellat expedita
-                nemo consectetur pariatur nulla odit minima sint asperiores
-                suscipit voluptates deleniti provident, dicta facilis.Lorem
-                ipsum dolor sit, amet consectetur adipisicing elit. Ad
-                recusandae adipisci mollitia, deserunt quaerat repellat expedita
-                nemo consectetur pariatur nulla odit minima sint asperiores
-                suscipit voluptates deleniti provident, dicta facilis
+              <p className="text-xl text-center max-w-7xl font-semibold lg:text-right">
+                Dr. Goutam Kumar Panda
+              </p>
+              <p className="text-xl text-center max-w-7xl font-semibold lg:text-right">
+                Associate Professor, Electrical Engineering
               </p>
             </div>
-          </div>
-          <div className="p-10">
-            <p className="lg:text-left text-xl text-center max-w-6xl ">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              est et voluptate nulla nam reprehenderit, quaerat ratione illo
-              cupiditate hic officiis minima? Facilis tenetur ducimus accusamus
-              eos laborum a sint.Lorem, ipsum dolor sit amet consectetur
-              adipisicing elit. Beatae est et voluptate nulla nam reprehenderit,
-              quaerat ratione illo cupiditate hic officiis minima? Facilis
-              tenetur ducimus accusamus eos laborum a sint.
-            </p>
           </div>
         </div>
       </div>
