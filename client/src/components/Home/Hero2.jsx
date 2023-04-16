@@ -1,12 +1,12 @@
 import React from "react";
-import Pandulipi from "../../assets/img/2022.png";
+import cover_2022 from "../../assets/img/2022.png";
 
 function Hero2() {
   return (
     <div className="min-h-screen gap-x-60 bg-[#252B42] flex flex-col justify-center items-center xl:flex-row">
       <img
         className="p-10 max-w-sm md:max-w-lg xl:max-w-xl"
-        src={Pandulipi}
+        src={cover_2022}
         alt=""
       />
       <div className="text-white p-10 flex flex-col justify-center items-center xl:gap-y-32">
