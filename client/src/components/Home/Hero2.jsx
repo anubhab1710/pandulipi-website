@@ -12,7 +12,7 @@ function Hero2() {
       <div className="text-white p-10 flex flex-col justify-center items-center xl:gap-y-32">
         <div className="flex flex-col gap-y-3  justify-center items-center">
           <h1 className="text-4xl xl:text-8xl">Pandulipi</h1>
-          <h2 className="text-2xl xl:text-6xl">2021-2022</h2>
+          <h2 className="text-2xl xl:text-6xl">2022</h2>
         </div>
         <a
           href="/elibrary"

@@ -81,10 +81,10 @@ function About() {
               amelioration to a larger section of the society.
             </p>
             <br />
-            <p className="text-xl text-center max-w-7xl font-semibold lg:text-left">
+            <p className="text-xl max-w-7xl font-semibold lg:text-left">
               Dr. Amitava Ray
             </p>
-            <p className="text-xl text-center max-w-7xl font-semibold lg:text-left">
+            <p className="text-xl max-w-7xl font-semibold lg:text-left">
               Principal, JGEC
             </p>
           </div>
@@ -119,10 +119,10 @@ function About() {
                 লেখকের কাছে, আজকের দিনে এটাই আমাদের প্রত্যাশা থাকবে।
               </p>
               <br />
-              <p className="text-xl text-center max-w-7xl font-semibold lg:text-right">
+              <p className="text-xl max-w-7xl font-semibold lg:text-right">
                 Dr. Goutam Kumar Panda
               </p>
-              <p className="text-xl text-center max-w-7xl font-semibold lg:text-right">
+              <p className="text-xl max-w-7xl font-semibold lg:text-right">
                 Associate Professor, Electrical Engineering
               </p>
             </div>
