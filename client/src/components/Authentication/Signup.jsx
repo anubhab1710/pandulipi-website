@@ -5,15 +5,15 @@ const Signup = () => {
   return (
     <>
       <div className="flex justify-center items-center max-h-fit w-screen bg-[#252b42] py-10 px-5">
-        <div className=" flex-col rounded-xl max-w-md bg-[#fff] shadow-[0_0_10px_#00000080]">
+        <div className=" flex-col rounded-xl max-w-lg bg-[#fff] shadow-[0_0_10px_#00000080]">
           <div className="bg-[#295C7Acc] flex items-center justify-center rounded-t-xl ">
             <img src={logo} className="w-9/12" alt="Pandulipi logo" />
           </div>
-          <div className="flex flex-col items-center p-4 pt-6">
-            <span class="self-center text-5xl font-semibold whitespace-nowrap dark:text-[#295C7A]">
+          <div className="flex flex-col items-center p-4 sm:px-16 ">
+            {/* <span class="self-center text-5xl font-semibold whitespace-nowrap dark:text-[#295C7A]">
               Pandulipi
-            </span>
-            <h1 className="text-center text-3xl p-6 font-semibold ">
+            </span> */}
+            <h1 className="text-center text-3xl pb-6 pt-2 font-semibold ">
               Create your account
             </h1>
             <div className="flex flex-col gap-3 items-center">
@@ -83,7 +83,7 @@ const Signup = () => {
                   className="p-1.5 pl-10 text-black font-medium bg-[#295C7A] bg-opacity-10 rounded-md w-80 sm:w-96 focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
                 />
               </div>
-              <div className="relative">
+              {/* <div className="relative">
                 <div className="absolute top-[2px] left-[6px] ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -114,8 +114,8 @@ const Signup = () => {
                     Alumni
                   </option>
                 </select>
-              </div>
-              <div className="relative">
+              </div> */}
+              {/* <div className="relative">
                 <div className="absolute top-[1px] left-[2px] ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -155,18 +155,17 @@ const Signup = () => {
                     Basic Sciences & Humanities
                   </option>
                 </select>
-              </div>
-              <div className="flex items-center justify-center w-full gap-x-3">
+              </div> */}
+              <div className="flex flex-col gap-3 items-center justify-center w-full gap-x-3">
                 <div className="relative">
-                  <div className="absolute top-[-3px] left-[0rem]">
+                  <div className="absolute top-[3px] left-[.3rem]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 1080 1080"
+                      viewBox="0 0 30 30"
                       fill="#295C7A"
-                      className="w-10 h-10"
+                      className="w-7 h-7"
                     >
-                      <path d="M508.3 289.5c0-17.2 14.5-31.7 31.7-31.7 17.1 0 31.6 14.5 31.6 31.7v7.8c0 27.2 22.2 49.5 49.5 49.5 27.2 0 49.5-22.3 49.5-49.5v-7.8c0-72-58.6-130.7-130.6-130.7-72.1 0-130.7 58.7-130.7 130.7v93.6h99v-93.6zM540 544.2c19.5 0 35.3-15.8 35.3-35.3 0-20.1-15.5-35.8-35.3-35.8-19.8 0-35.3 15.7-35.3 35.8 0 19.5 15.8 35.3 35.3 35.3z" />
-                      <path d="M408.6 664.7h262.7c27.3 0 49.5-22.2 49.5-49.5V449.3c0-27.3-22.2-49.5-49.5-49.5H408.6c-27.3 0-49.5 22.2-49.5 49.5v165.9c0 27.3 22.2 49.5 49.5 49.5zM540 456.4c28.6 0 52 23.5 52 52.5 0 25.8-18.9 47.2-43.6 51.2v39.6c0 4.6-3.7 8.3-8.3 8.3-4.6 0-8.3-3.7-8.3-8.3v-39.6c-24.7-4-43.6-25.4-43.6-51.2-.2-28.9 23.1-52.5 51.8-52.5zm286.7 238.1H253.3c-30 0-59.2 12.2-80.1 33.3-21.2 20.9-33.2 50.1-33.2 80 0 62.5 50.8 113.3 113.3 113.3h573.3c29.9 0 59.1-12.2 80-33.2 21.2-20.9 33.3-50.1 33.3-80.1.1-62.5-50.8-113.3-113.2-113.3zm-460 138.6c3.3 3.3 3.3 8.5 0 11.8-1.6 1.6-3.8 2.4-5.9 2.4-2.1 0-4.3-.8-5.9-2.4l-25.3-25.3-25.3 25.3c-1.6 1.6-3.8 2.4-5.9 2.4-2.1 0-4.3-.8-5.9-2.4-3.3-3.3-3.3-8.5 0-11.8l25.3-25.3-25.3-25.3c-3.3-3.3-3.3-8.5 0-11.8s8.5-3.3 11.8 0l25.3 25.3 25.3-25.3c3.3-3.3 8.5-3.3 11.8 0s3.3 8.5 0 11.8l-25.3 25.3 25.3 25.3zm140.3 0c3.3 3.3 3.3 8.5 0 11.8-1.6 1.6-3.8 2.4-5.9 2.4s-4.3-.8-5.9-2.4l-25.3-25.3-25.3 25.3c-1.6 1.6-3.8 2.4-5.9 2.4-2.1 0-4.3-.8-5.9-2.4-3.3-3.3-3.3-8.5 0-11.8l25.3-25.3-25.3-25.3c-3.3-3.3-3.3-8.5 0-11.8s8.5-3.3 11.8 0l25.3 25.3 25.3-25.3c3.3-3.3 8.5-3.3 11.8 0 3.3 3.3 3.3 8.5 0 11.8l-25.3 25.3 25.3 25.3zm140.2 0c3.3 3.3 3.3 8.5 0 11.8-1.6 1.6-3.8 2.4-5.9 2.4-2.1 0-4.3-.8-5.9-2.4l-25.3-25.3-25.3 25.3c-1.6 1.6-3.8 2.4-5.9 2.4-2.1 0-4.3-.8-5.9-2.4-3.3-3.3-3.3-8.5 0-11.8l25.3-25.3-25.3-25.3c-3.3-3.3-3.3-8.5 0-11.8 3.3-3.3 8.5-3.3 11.8 0l25.3 25.3 25.3-25.3c3.3-3.3 8.5-3.3 11.8 0 3.3 3.3 3.3 8.5 0 11.8l-25.3 25.3 25.3 25.3zm140.2 0c3.3 3.3 3.3 8.5 0 11.8-1.6 1.6-3.8 2.4-5.9 2.4-2.1 0-4.3-.8-5.9-2.4l-25.3-25.3-25.3 25.3c-1.6 1.6-3.8 2.4-5.9 2.4s-4.3-.8-5.9-2.4c-3.3-3.3-3.3-8.5 0-11.8l25.3-25.3-25.3-25.3c-3.3-3.3-3.3-8.5 0-11.8 3.3-3.3 8.5-3.3 11.8 0l25.3 25.3 25.3-25.3c3.3-3.3 8.5-3.3 11.8 0s3.3 8.5 0 11.8l-25.3 25.3 25.3 25.3z" />
+                      <path d="M 15 2 C 11.145666 2 8 5.1456661 8 9 L 8 11 L 6 11 C 4.895 11 4 11.895 4 13 L 4 25 C 4 26.105 4.895 27 6 27 L 24 27 C 25.105 27 26 26.105 26 25 L 26 13 C 26 11.895 25.105 11 24 11 L 22 11 L 22 9 C 22 5.2715823 19.036581 2.2685653 15.355469 2.0722656 A 1.0001 1.0001 0 0 0 15 2 z M 15 4 C 17.773666 4 20 6.2263339 20 9 L 20 11 L 10 11 L 10 9 C 10 6.2263339 12.226334 4 15 4 z" />
                     </svg>
                   </div>
                   <input
@@ -174,7 +173,7 @@ const Signup = () => {
                     type="password"
                     placeholder="Enter your password"
                     name="password"
-                    className="p-1.5 pl-10 text-black font-medium bg-[#295C7A] bg-opacity-10 w-full  rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
+                    className="p-1.5 pl-10 text-black font-medium bg-[#295C7A] bg-opacity-10 w-96 rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
                   />
                 </div>
                 <div className="relative">
@@ -193,7 +192,7 @@ const Signup = () => {
                     type="password"
                     placeholder="Confirm your password"
                     name="cpassword"
-                    className="p-1.5 pl-10 text-black font-medium bg-[#295C7A] bg-opacity-10 w-full  rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
+                    className="p-1.5 pl-10 w-96 text-black font-medium bg-[#295C7A] bg-opacity-10  rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
                   />
                 </div>
               </div>
@@ -201,12 +200,12 @@ const Signup = () => {
               <div>
                 <button
                   type="submit"
-                  className="text-white py-1 px-6 text-2xl w-full bg-[#295C7A] hover:bg-[#252b42] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+                  className="text-white text-lg py-2 px-6 font-bold mt-3 bg-[#295C7A] hover:bg-[#252b42] focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg w-full sm:w-auto  text-center"
                 >
-                  Signup
+                  Sign Up
                 </button>
               </div>
-              <div>
+              <div className="pb-2">
                 <span className="text-xl font-medium">
                   Already have an account?{" "}
                   <NavLink
