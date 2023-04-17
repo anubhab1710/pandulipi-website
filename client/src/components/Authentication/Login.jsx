@@ -9,11 +9,11 @@ const Login = () => {
           <div className="bg-[#295C7Acc]  flex items-center justify-center rounded-t-xl">
             <img src={logo} className="w-9/12" alt="Pandulipi logo" />
           </div>
-          <div className="flex flex-col items-center justify-center  pt-4 pb-6 w-full">
-            <span class="text-4xl xl:text-5xl font-semibold whitespace-nowrap dark:text-[#295C7A]">
+          <div className="flex flex-col items-center justify-center   pb-6 w-full">
+            {/* <span class="text-4xl xl:text-5xl font-semibold whitespace-nowrap dark:text-[#295C7A]">
               Pandulipi
-            </span>
-            <h1 className="text-center text-2xl xl:text-3xl py-3 font-semibold ">
+            </span> */}
+            <h1 className="text-center text-2xl xl:text-3xl py-8 font-semibold ">
               Login to your account
             </h1>
             <div className="flex flex-col gap-y-3 w-full items-center">
@@ -67,7 +67,7 @@ const Login = () => {
               <div>
                 <button
                   type="submit"
-                  className="text-white py-2 px-6 font-bold text-lg w-full bg-[#295C7A] hover:bg-[#252b42] focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg  sm:w-auto  text-center"
+                  className="text-white py-2 px-6 font-bold text-lg w-full bg-[#295C7A] hover:bg-[#1a5171] focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg  sm:w-auto  text-center"
                 >
                   Login
                 </button>
