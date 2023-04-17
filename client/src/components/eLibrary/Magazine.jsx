@@ -6,12 +6,6 @@ import cover_2022 from "../../assets/img/2022.png";
 import cover_2021 from "../../assets/img/2021.png";
 import cover_2020 from "../../assets/img/2020.png";
 import cover_2019 from "../../assets/img/2019.png";
-import cover_2018 from "../../assets/img/2018.png";
-import cover_2016 from "../../assets/img/2016.png";
-import cover_2014 from "../../assets/img/2014.png";
-import cover_1990 from "../../assets/img/1990.png";
-import cover_1985 from "../../assets/img/1985.png";
-import cover_1982 from "../../assets/img/1982.png";
 
 const Magazine = () => {
   const magazineDetails = [
