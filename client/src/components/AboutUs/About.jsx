@@ -99,7 +99,7 @@ function About() {
             <img
               src={VicePresident}
               alt=""
-              className="lg:h-72 h-56 rounded-md"
+              className="lg:h-72 h-56 rounded-md m-10"
             />
             <div className="max-w-4xl text-lg text-justify m-10 xl:text-right">
               <p>
