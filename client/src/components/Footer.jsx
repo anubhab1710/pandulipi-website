@@ -3,7 +3,7 @@ import insta from '../assets/icons/instagram-logo-84.png'
 import Linkedin from '../assets/icons/linkedin-square-logo-84.png'
 import Youtube from '../assets/icons/youtube-logo-84.png'
 import Facebook from '../assets/icons/facebook-circle-logo-84.png'
-import Logo from '../assets/img/logo1.png'
+import Logo from '../assets/img/JGEC Logo.png'
 function Footer() {
   return (
     <div className='flex justify-center w-full bg-[#252B42] md:py-5'>

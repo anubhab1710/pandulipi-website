@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/img/Logo - White.png";
+import logo from "../../assets/img/Pandulipi Logo - White.png";
 const Signup = () => {
   return (
     <>
@@ -10,9 +10,6 @@ const Signup = () => {
             <img src={logo} className="w-9/12" alt="Pandulipi logo" />
           </div>
           <div className="flex flex-col items-center p-4 sm:px-16 ">
-            {/* <span class="self-center text-5xl font-semibold whitespace-nowrap dark:text-[#295C7A]">
-              Pandulipi
-            </span> */}
             <h1 className="text-center text-3xl pb-6 pt-2 font-semibold ">
               Create your account
             </h1>
@@ -36,7 +33,7 @@ const Signup = () => {
                 <input
                   autoComplete="off"
                   type="text"
-                  placeholder="Enter your Name"
+                  placeholder="Enter your name"
                   name="name"
                   className="p-1.5 pl-10  text-black font-medium bg-[#295C7A] bg-opacity-10 rounded-md w-80 sm:w-96 focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
                 />
@@ -78,12 +75,12 @@ const Signup = () => {
                 <input
                   autoComplete="off"
                   type="number"
-                  placeholder="Enter your Phone No"
+                  placeholder="Enter your phone number"
                   name="phone"
                   className="p-1.5 pl-10 text-black font-medium bg-[#295C7A] bg-opacity-10 rounded-md w-80 sm:w-96 focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
                 />
               </div>
-              {/* <div className="relative">
+              <div className="relative">
                 <div className="absolute top-[2px] left-[6px] ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -114,8 +111,8 @@ const Signup = () => {
                     Alumni
                   </option>
                 </select>
-              </div> */}
-              {/* <div className="relative">
+              </div>
+              <div className="relative">
                 <div className="absolute top-[1px] left-[2px] ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -133,20 +130,20 @@ const Signup = () => {
                   <option className="text-gray-500" value="" disabled selected>
                     Choose your department
                   </option>
+                  <option className="text-gray-500" value="IT">
+                    Information Engineering
+                  </option>
+                  <option className="text-gray-500" value="CSE">
+                    Computer Science & Engineering
+                  </option>
+                  <option className="text-gray-500" value="ECE">
+                    Electronics & Communication Engineering
+                  </option>
                   <option className="text-gray-500" value="CE">
                     Civil Engineering
                   </option>
-                  <option className="text-gray-500" value="CSE">
-                    Computer Science and Engineering
-                  </option>
-                  <option className="text-gray-500" value="ECE">
-                    Electronics and Communication Engineering
-                  </option>
                   <option className="text-gray-500" value="EE">
                     Electrical Engineering
-                  </option>
-                  <option className="text-gray-500" value="IT">
-                    Information Engineering
                   </option>
                   <option className="text-gray-500" value="ME">
                     Mechanical Engineering
@@ -155,7 +152,7 @@ const Signup = () => {
                     Basic Sciences & Humanities
                   </option>
                 </select>
-              </div> */}
+              </div>
               <div className="flex flex-col gap-3 items-center justify-center w-full gap-x-3">
                 <div className="relative">
                   <div className="absolute top-[3px] left-[.3rem]">
@@ -200,7 +197,7 @@ const Signup = () => {
               <div>
                 <button
                   type="submit"
-                  className="text-white text-lg py-2 px-6 font-bold mt-3 bg-[#295C7A] hover:bg-[#252b42] focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg w-full sm:w-auto  text-center"
+                  className="text-white text-lg py-2 px-6 font-bold mt-3 bg-[#295C7A] hover:bg-[#1a5171] focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg w-full sm:w-auto  text-center"
                 >
                   Sign Up
                 </button>

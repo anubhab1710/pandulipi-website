@@ -1,6 +1,6 @@
 import React from "react";
-import President from "../../assets/img/IMG_7670.jpg";
-import VicePresident from "../../assets/img/IMG_7689.jpg";
+import President from "../../assets/img/Principal.jpg";
+import VicePresident from "../../assets/img/Goutam Kumar Panda.jpg";
 
 function About() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/img/Logo - White.png";
+import logo from "../../assets/img/Pandulipi Logo - White.png";
 const Login = () => {
   return (
     <>
@@ -10,9 +10,6 @@ const Login = () => {
             <img src={logo} className="w-9/12" alt="Pandulipi logo" />
           </div>
           <div className="flex flex-col items-center justify-center   pb-6 w-full">
-            {/* <span class="text-4xl xl:text-5xl font-semibold whitespace-nowrap dark:text-[#295C7A]">
-              Pandulipi
-            </span> */}
             <h1 className="text-center text-2xl xl:text-3xl py-8 font-semibold ">
               Login to your account
             </h1>
