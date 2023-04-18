@@ -173,7 +173,7 @@ const Signup = () => {
                     type="password"
                     placeholder="Enter your password"
                     name="password"
-                    className="p-1.5 pl-10 text-black font-medium bg-[#295C7A] bg-opacity-10 w-96 rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
+                    className="p-1.5 pl-10 text-black font-medium bg-[#295C7A] bg-opacity-10 w-80 sm:w-96 rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
                   />
                 </div>
                 <div className="relative">
@@ -192,7 +192,7 @@ const Signup = () => {
                     type="password"
                     placeholder="Confirm your password"
                     name="cpassword"
-                    className="p-1.5 pl-10 w-96 text-black font-medium bg-[#295C7A] bg-opacity-10  rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
+                    className="p-1.5 pl-10 w-80 sm:w-96 text-black font-medium bg-[#295C7A] bg-opacity-10  rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
                   />
                 </div>
               </div>
