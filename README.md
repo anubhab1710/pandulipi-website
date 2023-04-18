@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./src/assets/img/Pandulipi Logo.png" alt="Pandulipi" width="250">
+    <img src="./client/src/assets/img/Pandulipi Logo.png" alt="Pandulipi" width="250">
   <h1 align="center">Pandulipi - Official Website</h1>
 </p>
 
@@ -23,7 +23,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 $ git clone https://github.com/anubhab1710/pandulipi-website.git
 
 # Go into the repository
-$ cd pandulipi-website
+$ cd pandulipi-website/client
 
 # Install dependencies
 $ npm install
