@@ -11,7 +11,7 @@ import mainak_maiti_img from "../../assets/team/MAINAK MAITI.jpg"
 import prakritish_mukhopadhyay_img from "../../assets/team/PRAKRITISH MUKHOPADHYAY.jpg"
 import rajdeep_nath_img from "../../assets/team/Rajdeep Nath.jpg"
 import sayangdipta_sen_img from "../../assets/team/Sayangdipta Sen.jpg"
-import shankhalika_mallick_img from "../../assets/team/Shankhalika Mallick.jpg"
+import shankhalika_mallick_img from "../../assets/team/Shankhalika Mallick.jpeg"
 import shreyan_ghatak_img from "../../assets/team/Shreyan Ghatak.jpg"
 
 const CoreTeam = () => {
