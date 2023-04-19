@@ -134,7 +134,7 @@ const Signup = () => {
                     Choose your department
                   </option>
                   <option className="text-gray-500" value="IT">
-                    Information Engineering
+                    Information Technology
                   </option>
                   <option className="text-gray-500" value="CSE">
                     Computer Science & Engineering
@@ -150,9 +150,6 @@ const Signup = () => {
                   </option>
                   <option className="text-gray-500" value="ME">
                     Mechanical Engineering
-                  </option>
-                  <option className="text-gray-500" value="BSH">
-                    Basic Sciences & Humanities
                   </option>
                 </select>
               </div>
