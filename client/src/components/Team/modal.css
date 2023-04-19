@@ -8,6 +8,7 @@
     position: fixed;
     z-index: 1;
     padding-top: 100px; 
+    padding-left: 9rem;
     left: 0;
     top: 0;
     width: 100%;
@@ -106,7 +107,9 @@
         margin:auto;
         flex-wrap: wrap;
     }
-    /* .close{
-        right: -1rem;
-    } */
+  }
+  @media screen and (max-width: 1100px) {
+    .modal{
+      padding-left: 4rem;
+    }
   }
