@@ -10,6 +10,11 @@ module.exports = {
       }
     },
   },
+  variants:{
+    extends:{
+      lineclamp: ["hover"]
+    }
+  },
   plugins: [
     require('tailwind-scrollbar-hide'),
     require("@tailwindcss/line-clamp")
