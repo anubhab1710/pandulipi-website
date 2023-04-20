@@ -51,6 +51,7 @@ const Magazine = () => {
               <div className="relative">
                 <img src={details.imgLink} alt={details.name} />
                 <a
+                target="_blank"
                   href={details.downloadLink}
                   id="button"
                   className="absolute bottom-20 right-5 rounded-full py-[10px] px-[15px] bg-white shadow-md"
