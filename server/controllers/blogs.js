@@ -50,6 +50,7 @@ export const getBlogsBySearch = async (req, res) => {
 
 export const createBlog = async (req, res) => {
     const blog = req.body;
+    console.log(blog);
     const newBlog = new BlogModel({
         ...blog,
         creator: req.userId,
