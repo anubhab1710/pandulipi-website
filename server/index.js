@@ -16,8 +16,12 @@ dotenv.config();
 
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
-app.use(cors());
-
+// app.use(cors());
+app.use(cors({
+    origin: ['https://pandulipijgec.in','http://localhost:3000'],
+    methods: ['GET', 'POST', 'DELETE', 'PUT', 'PATCH'],
+    credentials:true
+}))
 app.use("/gallery", galleryRoutes);
 app.use("/blogs", blogRoutes);
 app.use("/library", libraryRoutes);
@@ -26,9 +30,9 @@ app.use("/user", userRoutes);
 app.use("/", homeRoutes);
 
 const PORT = process.env.PORT || 5000;
-
+mongoose.set('strictQuery',true);
 mongoose
-    .connect(process.env.DATABASE_URL)
+    .connect(`mongodb://localhost:27017/pandulipi`)
     .then(() =>
         app.listen(PORT, () =>
             console.log(`Server running on port : http://localhost:${PORT}`)

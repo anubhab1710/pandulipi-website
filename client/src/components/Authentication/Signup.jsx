@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/img/Pandulipi Logo - White.png";
+import { useSignup } from "../../hooks/useSignup";
+
 const Signup = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [password, setPassword] = useState('');
+  const [cpassword, setCPassword] = useState('');
+  const gradYears = ["2023", "2024", "2025", "2026", "Alumni"]
+  const allDepartments = ["Civil Engineering", "Computer Science and Engineering", "Information Technology", "Electronics and Communication Engineering", "Electrical Engineering", "Mechanical Engineering"]
+  const [gradYear, setGradYear] = useState("")
+  const [dept, setDept] = useState("")
+  const { signup, error, isLoading } = useSignup();
+
+  const PostSignUpInfo = async (event) => {
+    event.preventDefault();
+    await signup(name, email, phone, password, cpassword, gradYear, dept);
+  }
   return (
     <>
       <div className="flex justify-center items-center max-h-fit w-screen bg-[#252b42] py-10 px-5">
@@ -36,6 +53,7 @@ const Signup = () => {
                   placeholder="Enter your name"
                   name="name"
                   className="p-1.5 pl-10  text-black font-medium bg-[#295C7A] bg-opacity-10 rounded-md w-80 sm:w-96 focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
               <div className="relative">
@@ -56,6 +74,7 @@ const Signup = () => {
                   placeholder="Enter your email"
                   name="email"
                   className="p-1.5 pl-10 text-black font-medium bg-[#295C7A] bg-opacity-10 rounded-md w-80 sm:w-96 focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div className="relative">
@@ -78,6 +97,7 @@ const Signup = () => {
                   placeholder="Enter your phone number"
                   name="phone"
                   className="p-1.5 pl-10 text-black font-medium bg-[#295C7A] bg-opacity-10 rounded-md w-80 sm:w-96 focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
+                  onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
               <div className="relative">
@@ -94,25 +114,17 @@ const Signup = () => {
                     <circle cx="17" cy="15" r="1.5" />
                   </svg>
                 </div>
-                <select className="p-1.5 pl-10 text-black font-medium bg-[#295C7A] bg-opacity-10 w-80 sm:w-96  rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none">
+                <select className="p-1.5 pl-10 text-black font-medium bg-[#295C7A] bg-opacity-10 w-80 sm:w-96  rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
+                  value={gradYear}
+                  onChange={e => setGradYear(e.target.value)} name="gradYear" >
                   <option className="text-gray-500" value="" disabled selected>
                     The year of graduation
                   </option>
-                  <option className="text-gray-500" value="2023">
-                    2023
-                  </option>
-                  <option className="text-gray-500" value="2024">
-                    2024
-                  </option>
-                  <option className="text-gray-500" value="2025">
-                    2025
-                  </option>
-                  <option className="text-gray-500" value="2026">
-                    2026
-                  </option>
-                  <option className="text-gray-500" value="alumni">
-                    Alumni
-                  </option>
+                  {gradYears.map((value) => (
+                    <option value={value} key={value}>
+                      {value}
+                    </option>
+                  ))}
                 </select>
               </div>
               <div className="relative">
@@ -129,28 +141,20 @@ const Signup = () => {
                     />
                   </svg>
                 </div>
-                <select className="p-1.5 pl-10 text-black font-medium bg-[#295C7A] bg-opacity-10 w-80 sm:w-96 rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none">
+                <select className="p-1.5 pl-10 text-black font-medium bg-[#295C7A] bg-opacity-10 w-80 sm:w-96 rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
+                  name="dept"
+                  value={dept}
+                  onChange={e => setDept(e.target.value)}
+                >
                   <option className="text-gray-500" value="" disabled selected>
                     Choose your department
                   </option>
-                  <option className="text-gray-500" value="IT">
-                    Information Technology
-                  </option>
-                  <option className="text-gray-500" value="CSE">
-                    Computer Science & Engineering
-                  </option>
-                  <option className="text-gray-500" value="ECE">
-                    Electronics & Communication Engineering
-                  </option>
-                  <option className="text-gray-500" value="CE">
-                    Civil Engineering
-                  </option>
-                  <option className="text-gray-500" value="EE">
-                    Electrical Engineering
-                  </option>
-                  <option className="text-gray-500" value="ME">
-                    Mechanical Engineering
-                  </option>
+                  {allDepartments.map((value) => (
+                    <option value={value} key={value}>
+                      {value}
+                    </option>
+                  ))}
+
                 </select>
               </div>
               <div className="flex flex-col gap-3 items-center justify-center w-full gap-x-3">
@@ -171,6 +175,7 @@ const Signup = () => {
                     placeholder="Enter your password"
                     name="password"
                     className="p-1.5 pl-10 text-black font-medium bg-[#295C7A] bg-opacity-10 w-80 sm:w-96 rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
+                    onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
                 <div className="relative">
@@ -190,14 +195,17 @@ const Signup = () => {
                     placeholder="Confirm your password"
                     name="cpassword"
                     className="p-1.5 pl-10 w-80 sm:w-96 text-black font-medium bg-[#295C7A] bg-opacity-10  rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
+                    onChange={(e) => setCPassword(e.target.value)}
                   />
                 </div>
               </div>
-
+              {error && <div className="text-red-600 font-bold my-1 bg-[#fbe7e7] p-1 rounded-md border-2 border-red-300">{error}</div>}
               <div>
                 <button
                   type="submit"
-                  className="text-white text-lg py-2 px-6 font-bold mt-3 bg-[#295C7A] hover:bg-[#1a5171] focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg w-full sm:w-auto  text-center"
+                  className="text-white text-lg py-2 px-6 font-bold mt-1 bg-[#295C7A] hover:bg-[#1a5171] focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg w-full sm:w-auto  text-center"
+                  disabled={isLoading}
+                  onClick={PostSignUpInfo}
                 >
                   Sign Up
                 </button>
@@ -216,7 +224,7 @@ const Signup = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div >
     </>
   );
 };

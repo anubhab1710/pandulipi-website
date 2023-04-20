@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 import './blog.css'
+import apiConfig from "../../api.config";
+import { useAuthContext } from '../../hooks/useAuthContext';
 
 const CreateBlog = () => {
+    const { user } = useAuthContext();
     const [title, setTitle] = useState('');
-    const [tags, setTags] = useState('');
+    const [tags, setTags] = useState("");
     const [content, setContent] = useState('');
     const [blogImg, setBlogImg] = useState('');
     function readImageAsBase64(e) {
@@ -30,12 +33,14 @@ const CreateBlog = () => {
     const PostBlogContent = async (e) => {
         e.preventDefault();
         try {
-            const resp = await fetch('/blogs/', {
+            let allTags = tags.split(" ")
+            const resp = await fetch(apiConfig.URL + '/blogs/', {
                 method: 'POST',
                 headers: {
+                    'Authorization': `Bearer ${user.token}`,
                     "Content-type": "application/json",
                 },
-                body: JSON.stringify({ title, tags, content, blogImg })
+                body: JSON.stringify({ title, allTags, content, blogImg })
             })
             const data = await resp.json();
             if (resp.ok) {

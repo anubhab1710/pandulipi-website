@@ -5,7 +5,7 @@ const blogSchema = new mongoose.Schema({
     message: String,
     name: String,
     creator: String,
-    tags: [String],
+    allTags: [String],
     selectedFile: String,
     likes: {
         type: [String],

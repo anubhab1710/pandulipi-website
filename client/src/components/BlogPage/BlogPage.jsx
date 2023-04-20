@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import BlogCard from "./BlogCard";
 import "./blog.css";
 import { NavLink } from "react-router-dom";
@@ -310,6 +310,24 @@ const BlogPage = () => {
   const [num, setNum] = useState(items);
   const [iter, setIter] = useState(0);
   const [btnText, setBtnText] = useState("Load More");
+  const [blogs, setBlogs] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [pageNo,setPageNo] = useState(0);
+  const [noOfPages,setNoOfPages] = useState(0);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    const reqOpts = {
+      method: "GET",
+    };
+    fetch("/blogs/", reqOpts)
+      .then((response) => response.json())
+      .then((json) => {
+        setBlogs(json.data);
+        setPageNo(json.currentPage);
+        setNoOfPages(json.numberOfPages);
+        setIsLoading(false);
+      });
+  }, []);
 
   const handleOnClick = () => {
     if (iter < Math.floor(blogList.length / items) - 2) {
