@@ -106,12 +106,9 @@ const Signup = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 32 32"
                     fill="#295C7A"
-                    className="w-8 h-8 mt-1 ml-0.5"
+                    className="w-10 h-10 mt-1.5 ml-0.5"
                   >
-                    <path d="M19,2H18V1a1,1,0,0,0-2,0V2H8V1A1,1,0,0,0,6,1V2H5A5.006,5.006,0,0,0,0,7V19a5.006,5.006,0,0,0,5,5H19a5.006,5.006,0,0,0,5-5V7A5.006,5.006,0,0,0,19,2ZM2,7A3,3,0,0,1,5,4H19a3,3,0,0,1,3,3V8H2ZM19,22H5a3,3,0,0,1-3-3V10H22v9A3,3,0,0,1,19,22Z" />
-                    <circle cx="12" cy="15" r="1.5" />
-                    <circle cx="7" cy="15" r="1.5" />
-                    <circle cx="17" cy="15" r="1.5" />
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
                   </svg>
                 </div>
                 <select className="p-1.5 pl-10 text-black font-medium bg-[#295C7A] bg-opacity-10 w-80 sm:w-96  rounded-md focus:shadow-[0px_0px_4px_#295C7A78] outline-none"
