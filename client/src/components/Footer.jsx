@@ -6,7 +6,8 @@ import Facebook from '../assets/icons/facebook-circle-logo-84.png'
 import Logo from '../assets/img/JGEC Logo.png'
 function Footer() {
   return (
-    <div className='flex justify-center w-full bg-[#252B42] md:py-5'>
+    // <div className='flex justify-center w-full bg-[#252B42] md:py-5'>
+    <div className='flex justify-center w-full bg-gray-900 md:py-5'>
 
     <div className='text-center text-white flex flex-col items-center gap-x-64 py-10 gap-y-10 font-oranienbaum xl:flex-row'>
         <div className='flex flex-col items-center md:flex-row'>
