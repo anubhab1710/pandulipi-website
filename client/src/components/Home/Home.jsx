@@ -3,7 +3,7 @@ import Hero from './Hero'
 import Hero2 from './Hero2'
 import Hero3 from './Hero3'
 // import Hero4 from './Hero4'
-import ContactUs from "./components/ContactUs";
+import ContactUs from "../ContactUs";
 
 function Home() {
   return (
