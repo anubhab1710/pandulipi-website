@@ -1,5 +1,11 @@
 import React from "react";
 import LatestEventCard from "./LatestEventCard";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 function Hero3() {
   const items = [
@@ -35,10 +41,35 @@ function Hero3() {
       <h2 className="text-5xl text-center p-10 text-[#295C7A] xl:text-7xl">
         LATEST EVENTS
       </h2>
-      <div className="flex justify-start overflow-x-scroll scrollbar-hide gap-x-10 p-5 pb-20">
-        {items.map((item) => (
-          <LatestEventCard title={item.title} content={item.content} />
-        ))}
+      <div className=" pb-20">
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={40}
+          slidesPerView={1}
+          breakpoints={{
+            576: {
+              // width: 576,
+              slidesPerView: 2,
+            },
+            768: {
+              // width: 768,
+              slidesPerView: 3,
+            },
+          }}
+          navigation
+          pagination={{ clickable: true }}
+          // scrollbar={{ draggable: true }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log("slide change")}
+        >
+          {items.map((item) => (
+            <SwiperSlide>
+              <div className="pl-10">
+                <LatestEventCard title={item.title} content={item.content} />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );
