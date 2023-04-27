@@ -12,7 +12,7 @@ function Home() {
         <Hero2/>
         <Hero3/>
         {/* <Hero4/> */}
-        <ContactUs/>
+        {/* <ContactUs/> */}
     </>
   )
 }
