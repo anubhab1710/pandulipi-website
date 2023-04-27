@@ -31,7 +31,7 @@ function App() {
         <Route path="/signup" element={!user ? <Signup /> : <Navigate to='/' />} />
         <Route path="*" element={<Error />} />
       </Routes>
-      <ContactUs />
+      {/* <ContactUs /> */}
       <Footer />
     </div>
   );
