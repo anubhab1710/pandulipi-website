@@ -30,9 +30,10 @@ app.use("/user", userRoutes);
 app.use("/", homeRoutes);
 
 const PORT = process.env.PORT || 5000;
+const DB_URI = process.env.DB_URI
 mongoose.set('strictQuery',true);
 mongoose
-    .connect(`mongodb://localhost:27017/pandulipi`)
+    .connect(`${DB_URI}`)
     .then(() =>
         app.listen(PORT, () =>
             console.log(`Server running on port : http://localhost:${PORT}`)

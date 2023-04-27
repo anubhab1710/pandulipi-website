@@ -34,19 +34,15 @@ export const signin = async (req, res) => {
 };
 
 export const signup = async (req, res) => {
-    const { email, password, cpassword, name, phone, gradYear, dept } = req.body
-    // const { name, email, phone, password, cpassword } = req.body;
+    const { email, password, cpassword, name, gradYear, dept } = req.body
 
     try {
         const existingUser = await UserModel.findOne({ email });
-        if (!name || !email || !phone || !password || !cpassword || !gradYear || !dept) {
+        if (!name || !email || !password || !cpassword || !gradYear || !dept) {
             return res.status(400).json({ message: "ALl fields must be filled! " });
         }
         if (!validator.isEmail(email)) {
             return res.status(400).json({ message: "Email is not valid! " });
-        }
-        if (phone.length !== 10) {
-            return res.status(400).json({ message: "Invaid Phone Number! " });
         }
         if (password !== cpassword) {
             return res.status(400).json({ message: "Passwords don't match!" });
@@ -66,7 +62,6 @@ export const signup = async (req, res) => {
             email,
             password: hashedPassword,
             name,
-            phnNo: phone,
             gradYear,
             dept,
         });
