@@ -10,7 +10,7 @@ function Hero() {
       />
       <div className="m-5 py-14 rounded-3xl max-w-7xl bg-gray-300 bg-opacity-50 backdrop-blur-md transition-all duration-500 flex flex-col justify-center items-center">
         <h1 className="text-7xl xl:text-8xl">Pandulipi</h1>
-        <h2 className="text-5xl xl:text-7xl text-[#295C7A]">The Magazine Club of JGEC</h2>
+        <h2 className="text-5xl xl:text-7xl text-center px-10 text-[#295C7A]">The Magazine Club of JGEC</h2>
         <div className="p-10 md:p-20 text-justify max-w-6xl xl:text-2xl">
           <p>
             Soon after the Jalpaiguri Government Engineering College came into
