@@ -8,9 +8,9 @@ function Hero() {
         src="https://img.freepik.com/premium-photo/simple-composition-from-many-hardback-books-tinted-classic-blue-color_96336-515.jpg?w=2000"
         alt=""
       />
-      <div className="m-5 py-20 rounded-3xl max-w-7xl bg-gray-300 bg-opacity-50 backdrop-blur-md transition-all duration-500 flex flex-col justify-center items-center">
+      <div className="m-5 py-14 rounded-3xl max-w-7xl bg-gray-300 bg-opacity-50 backdrop-blur-md transition-all duration-500 flex flex-col justify-center items-center">
         <h1 className="text-7xl xl:text-8xl">Pandulipi</h1>
-        <h2 className="text-5xl xl:text-7xl text-[#295C7A]">Magazine Club</h2>
+        <h2 className="text-5xl xl:text-7xl text-[#295C7A]">The Magazine Club of JGEC</h2>
         <div className="p-10 md:p-20 text-justify max-w-6xl xl:text-2xl">
           <p>
             Soon after the Jalpaiguri Government Engineering College came into

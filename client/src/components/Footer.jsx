@@ -13,7 +13,7 @@ function Footer() {
         <div className='flex flex-col items-center md:flex-row'>
             <img className='h-28 mx-20 md:mx-0 md:mr-20 mb-5 md:mb-0' src={Logo} alt="" />
             <div className='flex px-10 md:p-0 flex-col items-center'>
-                <p className='text-[32px]'>Pandulipi Magazine Club</p>
+                <p className='text-[32px]'>Pandulipi: The Magazine Club</p>
                 <p className='text-[20px]'>Jalpaiguri Government Engineering College</p>
             </div>
         </div>
