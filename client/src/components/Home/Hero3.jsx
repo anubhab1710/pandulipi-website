@@ -41,7 +41,7 @@ function Hero3() {
       <h2 className="text-5xl text-center p-10 text-[#295C7A] xl:text-7xl">
         LATEST EVENTS
       </h2>
-      <div className=" pb-20">
+      <div className="">
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={40}
