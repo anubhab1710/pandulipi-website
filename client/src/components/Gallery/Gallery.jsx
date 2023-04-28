@@ -11,9 +11,9 @@ const Gallery = () => {
         <div id='canvas'>
             <h1 className='text-center text-5xl p-10 text-[#fff]'>Events Gallery</h1>
             <div id="navigation" className='flex flex-wrap gap-20  justify-center mt-3'>
-                <NavLink className='album_name text-center' to='./album1'>Album - 1</NavLink>
+                {/* <NavLink className='album_name text-center' to='./album1'>Album - 1</NavLink>
                 <NavLink className='album_name text-center' to='./album2'>Album - 2</NavLink>
-                <NavLink className='album_name text-center' to='./album3'>Album - 3</NavLink>
+                <NavLink className='album_name text-center' to='./album3'>Album - 3</NavLink> */}
             </div>
 
             <Routes>

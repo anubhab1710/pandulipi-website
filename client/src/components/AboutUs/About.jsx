@@ -123,7 +123,7 @@ function About() {
                 Dr. Goutam Kumar Panda
               </p>
               <p className="text-xl max-w-7xl font-semibold lg:text-right">
-                Associate Professor, Electrical Engineering
+                Professor, Electrical Engineering
               </p>
             </div>
           </div>
