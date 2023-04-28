@@ -1,4 +1,4 @@
-import React, { useState ,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import BlogCard from "./BlogCard";
 import "./blog.css";
 import { NavLink } from "react-router-dom";
@@ -8,8 +8,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -21,8 +20,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -34,8 +32,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -47,8 +44,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -60,8 +56,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -73,8 +68,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -86,8 +80,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -99,8 +92,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -112,8 +104,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -125,8 +116,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -138,8 +128,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -151,8 +140,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -164,8 +152,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -177,8 +164,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -190,8 +176,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -203,8 +188,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -216,8 +200,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -229,8 +212,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -242,8 +224,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -255,8 +236,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -268,8 +248,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -281,8 +260,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -294,8 +272,7 @@ const BlogPage = () => {
     {
       id: "6564543",
       author: "Lorem Ipsum",
-      title:
-        "The Sunset is Like Beauty",
+      title: "The Sunset is Like Beauty",
       time: "2023-02-09-22-16",
       imgLink:
         "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
@@ -312,8 +289,8 @@ const BlogPage = () => {
   const [btnText, setBtnText] = useState("Load More");
   const [blogs, setBlogs] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [pageNo,setPageNo] = useState(0);
-  const [noOfPages,setNoOfPages] = useState(0);
+  const [pageNo, setPageNo] = useState(0);
+  const [noOfPages, setNoOfPages] = useState(0);
   useEffect(() => {
     window.scrollTo(0, 0);
     const reqOpts = {
@@ -381,7 +358,9 @@ const BlogPage = () => {
         </NavLink>
       </div>
       <div className="blogcards">
-        {blogList.slice(0, num).map((element) => (
+        <div className="text-xl h-64 ">There is no blogs to show.</div>
+
+        {/* {blogList.slice(0, num).map((element) => (
           <div className="bCard" key={element.id}>
             <BlogCard
               author={element.author}
@@ -393,16 +372,16 @@ const BlogPage = () => {
               likes={element.likes}
             />
           </div>
-        ))}
+        ))} */}
       </div>
       <div className="flex flex-wrap justify-center mb-10">
-        <button
+        {/* <button
           type="button"
           className="cursor-pointer inline-flex justify-center items-center py-3 px-8  xl:text-xl text-center font-semibold border-2 border-white text-white hover:scale-110 transition-all hover:bg-white hover:text-[#224e68]"
           onClick={handleOnClick}
         >
           {btnText}
-        </button>
+        </button> */}
       </div>
     </div>
   );
