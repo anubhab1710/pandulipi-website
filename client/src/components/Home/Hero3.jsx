@@ -64,7 +64,7 @@ function Hero3() {
         >
           {items.map((item) => (
             <SwiperSlide>
-              <div className="pl-10">
+              <div className="pl-10 flex items-center">
                 <LatestEventCard title={item.title} content={item.content} />
               </div>
             </SwiperSlide>
