@@ -57,14 +57,14 @@ function Hero3() {
             },
           }}
           navigation
-          pagination={{ clickable: true }}
+          // pagination={{ clickable: true }}
           // scrollbar={{ draggable: true }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
         >
           {items.map((item) => (
             <SwiperSlide>
-              <div className="pl-10">
+              <div className="pl-10 flex items-center">
                 <LatestEventCard title={item.title} content={item.content} />
               </div>
             </SwiperSlide>
