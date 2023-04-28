@@ -50,13 +50,13 @@ const Album1 = () => {
         }
     };
 
-    // // var a;
-    // var a = "https://images.pexels.com/photos/2113566/pexels-photo-2113566.jpeg";
+    // var a;
+    var a = "https://images.pexels.com/photos/2113566/pexels-photo-2113566.jpeg";
 
-    // function set(p) {
-    //     a = p;
-    //     // setShow(true);
-    // }
+    function set(p) {
+        a = p;
+        // setShow(true);
+    }
 
 
     return (

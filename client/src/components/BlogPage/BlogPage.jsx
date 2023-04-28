@@ -358,7 +358,7 @@ const BlogPage = () => {
         </NavLink>
       </div>
       <div className="blogcards">
-        <div className="text-xl h-64 ">There is no blogs to show.</div>
+        <div className="text-white text-2xl h-64 ">There is no blogs to show.</div>
 
         {/* {blogList.slice(0, num).map((element) => (
           <div className="bCard" key={element.id}>
