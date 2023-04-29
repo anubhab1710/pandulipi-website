@@ -5,7 +5,7 @@ import VicePresident from "../../assets/img/Goutam Kumar Panda.jpg";
 function About() {
   return (
     <>
-      <div className="bg-[#252B42] text-white">
+      <div className="bg-[#EEEEEE]">
         <h1 className="text-center text-5xl p-10 ">About Us</h1>
         <div className="flex flex-col justify-center pb-10 items-center xl:flex-row-reverse">
           <div className="text-xl max-w-4xl text-center m-10 xl:text-left">
@@ -31,7 +31,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="bg-[#EEEEEE]">
+      <div className="bg-[#252B42] text-white">
         <h1 className="text-center text-5xl p-10">From the President's Desk</h1>
         <div className="flex flex-col items-center">
           <div className="flex flex-col justify-center items-center xl:flex-row">
@@ -90,7 +90,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="bg-[#252B42] text-white">
+      <div className="bg-[#EEEEEE]">
         <h1 className="text-center text-5xl p-10">
           From the Vice President's Desk
         </h1>
