@@ -177,7 +177,7 @@ function Navbar() {
                     : { color: "white", fontWeight: "normal" }
                 }
               >
-                Contact Us
+                Contact
               </NavLink>
             </li>
             <div className="flex gap-x-5 visible sm: justify-center">

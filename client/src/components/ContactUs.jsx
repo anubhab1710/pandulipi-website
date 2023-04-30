@@ -3,7 +3,7 @@ import React from 'react'
 function ContactUs() {
   return (
     <div className='bg-[#EEEEEE] flex flex-col items-center w-screen'>
-    <h2 className='text-center text-4xl p-10'>CONTACT US</h2>
+    <h2 className='text-center text-5xl p-10 text-[#295C7A]'>Contact Us</h2>
 
     <div className='flex w-4/5 xl:w-3/5 flex-col justify-center items-start md:flex-row'>
         <div className=' text-[#295C7A] flex md:mt-11'>

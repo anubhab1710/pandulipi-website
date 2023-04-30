@@ -6,7 +6,7 @@ function About() {
   return (
     <>
       <div className="bg-[#EEEEEE]">
-        <h1 className="text-center text-5xl p-10 ">About Us</h1>
+        <h1 className="text-center text-5xl p-10 text-[#295C7A]">About Us</h1>
         <div className="flex flex-col justify-center pb-10 items-center xl:flex-row-reverse">
           <div className="text-xl max-w-4xl text-center m-10 xl:text-left">
             <p>
@@ -91,7 +91,7 @@ function About() {
         </div>
       </div>
       <div className="bg-[#EEEEEE]">
-        <h1 className="text-center text-5xl p-10">
+        <h1 className="text-center text-5xl p-10 text-[#295C7A]">
           From the Vice President's Desk
         </h1>
         <div className="flex flex-col items-center">
