@@ -27,6 +27,7 @@ function App() {
         <Route path="/createblog" element={user ? <CreateBlog /> : <Navigate to='/login' />} />
         <Route path="/elibrary" element={<Library />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/contactUs" element={<ContactUs />} />
         <Route path="/login" element={!user ? <Login /> : <Navigate to='/' />} />
         <Route path="/signup" element={!user ? <Signup /> : <Navigate to='/' />} />
         <Route path="*" element={<Error />} />
