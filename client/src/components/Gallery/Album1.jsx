@@ -36,6 +36,7 @@ const Album1 = () => {
     const imagePerColumn = 6;
     const [next, setNext] = useState(imagePerColumn);
     const [show, setShow] = useState(false);
+    const [source, setSource] = useState("");
     const [btnText, setBtnText] = useState("Load More");
 
     const handleMoreImage = () => {
@@ -69,6 +70,7 @@ const Album1 = () => {
                             <LazyLoadImage onClick={() => {
                                 { set(details.imgLink) };
                                 setShow(true);
+                                setSource(details.imgLink);
                             }} src={details.imgLink} alt={details.name} className='myImg' />
                         </div>
 
@@ -80,6 +82,7 @@ const Album1 = () => {
                             <LazyLoadImage onClick={() => {
                                 { set(details.imgLink) };
                                 setShow(true);
+                                setSource(details.imgLink);
                             }} src={details.imgLink} alt={details.name} className='myImg' />
                         </div>
                     ))}
@@ -89,6 +92,7 @@ const Album1 = () => {
                         <div>
                             <LazyLoadImage onClick={() => {
                                 { set(details.imgLink) };
+                                setSource(details.imgLink);
                                 setShow(true);
                             }} src={details.imgLink} alt={details.name} className='myImg' />
                         </div>
@@ -100,6 +104,7 @@ const Album1 = () => {
                             <LazyLoadImage onClick={() => {
                                 { set(details.imgLink) };
                                 setShow(true);
+                                setSource(details.imgLink);
                             }} src={details.imgLink} alt={details.name} className='myImg' />
                         </div>
                     ))}
@@ -108,7 +113,7 @@ const Album1 = () => {
             </div>
 
             <Modal onClose={() => setShow(false)} show={show}>
-                <LazyLoadImage src={a} />
+                <LazyLoadImage src={source} />
             </Modal>
             
             {/* <div className='flex flex-wrap justify-center'>
