@@ -2,287 +2,9 @@ import React, { useState, useEffect } from "react";
 import BlogCard from "./BlogCard";
 import "./blog.css";
 import { NavLink } from "react-router-dom";
+import apiConfig from "../../api.config";
 
 const BlogPage = () => {
-  const blogList = [
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-    {
-      id: "6564543",
-      author: "Lorem Ipsum",
-      title: "The Sunset is Like Beauty",
-      time: "2023-02-09-22-16",
-      imgLink:
-        "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg",
-      tags: ["#sunset", "#nature", "#relive-life"],
-      content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus nulla culpa! Explicabo, et nam magni numquam ab quidem placeat nihil delectus omnis est dolor eligendi aperiam magnam exercitationem soluta autem culpa facilis illo. Illum exercitationem aspernatur veniam repudiandae dolores repellat molestias, nam dolorum similique ipsam pariatur dignissimos, molestiae quaerat quam. Expedita molestiae eligendi exercitationem maxime magnam atque dolores debitis, hic sed excepturi, sit officiis. Ad, possimus! Dolorem vitae labore quas saepe illo provident nemo, ipsa expedita dolore rerum deleniti veritatis quae nesciunt ad quod, facilis aliquid est excepturi velit ipsam? Cumque ab, laudantium veniam velit atque fuga obcaecati ut.",
-      likes: "10",
-    },
-  ];
-
   const items = 8;
   const [num, setNum] = useState(items);
   const [iter, setIter] = useState(0);
@@ -296,7 +18,7 @@ const BlogPage = () => {
     const reqOpts = {
       method: "GET",
     };
-    fetch("/blogs/", reqOpts)
+    fetch(`${apiConfig.URL}/blogs`, reqOpts)
       .then((response) => response.json())
       .then((json) => {
         setBlogs(json.data);
@@ -307,11 +29,11 @@ const BlogPage = () => {
   }, []);
 
   const handleOnClick = () => {
-    if (iter < Math.floor(blogList.length / items) - 2) {
+    if (iter < Math.floor(blogs.length / items) - 2) {
       setBtnText("Load More");
       setNum(num + items);
       setIter(iter + 1);
-    } else if (iter < Math.floor(blogList.length / items) - 1) {
+    } else if (iter < Math.floor(blogs.length / items) - 1) {
       setBtnText("Show Less");
       setNum(num + items);
       setIter(iter + 1);
@@ -360,28 +82,29 @@ const BlogPage = () => {
       <div className="blogcards">
         <div className="text-white text-2xl h-64 ">There is no blogs to show.</div>
 
-        {/* {blogList.slice(0, num).map((element) => (
+         {blogs.slice(0, num).map((element) => (
           <div className="bCard" key={element.id}>
             <BlogCard
-              author={element.author}
+              author={element.creator}
+              name={element.creator}
               title={element.title.slice(0, 30)}
-              time={element.time}
-              imgLink={element.imgLink}
-              tags={element.tags}
-              content={element.content.slice(0, 200)}
-              likes={element.likes}
+              time={element.createdAt}
+              imgLink="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+              tags={element.allTags}
+              content={element?.content?.slice(0, 200)}
+              likes={element.likes.length}
             />
           </div>
-        ))} */}
+        ))} 
       </div>
       <div className="flex flex-wrap justify-center mb-10">
-        {/* <button
+        <button
           type="button"
           className="cursor-pointer inline-flex justify-center items-center py-3 px-8  xl:text-xl text-center font-semibold border-2 border-white text-white hover:scale-110 transition-all hover:bg-white hover:text-[#224e68]"
           onClick={handleOnClick}
         >
           {btnText}
-        </button> */}
+        </button> 
       </div>
     </div>
   );
