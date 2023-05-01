@@ -80,9 +80,8 @@ const BlogPage = () => {
         </NavLink>
       </div>
       <div className="blogcards">
-        <div className="text-white text-2xl h-64 ">There is no blogs to show.</div>
-
-         {blogs.slice(0, num).map((element) => (
+        {blogs.length>0 ? (<>
+         {blogs.map((element) => (
           <div className="bCard" key={element.id}>
             <BlogCard
               author={element.creator}
@@ -95,9 +94,11 @@ const BlogPage = () => {
               likes={element.likes.length}
             />
           </div>
-        ))} 
+        ))}</>):(<div className="text-white text-2xl h-64 ">There are no blogs to show</div>)}
+
+ 
       </div>
-      <div className="flex flex-wrap justify-center mb-10">
+      {/* <div className="flex flex-wrap justify-center mb-10">
         <button
           type="button"
           className="cursor-pointer inline-flex justify-center items-center py-3 px-8  xl:text-xl text-center font-semibold border-2 border-white text-white hover:scale-110 transition-all hover:bg-white hover:text-[#224e68]"
@@ -105,7 +106,7 @@ const BlogPage = () => {
         >
           {btnText}
         </button> 
-      </div>
+      </div> */}
     </div>
   );
 };
