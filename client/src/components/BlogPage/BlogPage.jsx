@@ -84,6 +84,7 @@ const BlogPage = () => {
          {blogs.map((element) => (
           <div className="bCard" key={element.id}>
             <BlogCard
+              id={element.id}
               author={element.creator}
               name={element.creator}
               title={element.title.slice(0, 30)}
