@@ -49,10 +49,15 @@ export const getBlogsBySearch = async (req, res) => {
 };
 
 export const createBlog = async (req, res) => {
-    const blog = req.body;
-    console.log(blog);
+    const { title, allTags, content, blogImg } = req.body;
+    if (!title || !allTags || !content || !blogImg) {
+        return res.status(422).json({ message: "All fields must be filled" });
+    }
     const newBlog = new BlogModel({
-        ...blog,
+        title: title,
+        message: content,
+        allTags: allTags,
+        selectedFile: blogImg,
         creator: req.userId,
         createdAt: new Date().toISOString(),
     });
