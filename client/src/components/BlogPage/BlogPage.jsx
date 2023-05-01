@@ -88,7 +88,7 @@ const BlogPage = () => {
               name={element.creator}
               title={element.title.slice(0, 30)}
               time={element.createdAt}
-              imgLink="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+              imgLink="https://picsum.photos/300/200"
               tags={element.allTags}
               content={element?.content?.slice(0, 200)}
               likes={element.likes.length}
