@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import { BlogModel } from "../models/blogs.js";
+import { UserModel } from "../models/user.js";
 
 export const getBlogs = async (req, res) => {
     const { page } = req.query;
@@ -53,12 +54,14 @@ export const createBlog = async (req, res) => {
     if (!title || !allTags || !content || !blogImg) {
         return res.status(422).json({ message: "All fields must be filled" });
     }
+    const author = await UserModel.findById({ _id: req.userId })
+    console.log(author)
     const newBlog = new BlogModel({
         title: title,
         message: content,
         allTags: allTags,
         selectedFile: blogImg,
-        creator: req.userId,
+        creator: author.name,
         createdAt: new Date().toISOString(),
     });
 
