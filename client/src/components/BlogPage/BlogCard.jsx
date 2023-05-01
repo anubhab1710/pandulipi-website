@@ -12,7 +12,7 @@ export default function BlogCard(props) {
         <div className="font-normal">{props.time}</div>
       </div>
       <div id="blog">
-        <img src={props.imgLink} alt={props.name} />
+        <img src={"https://picsum.photos/300/200"} alt={props.name} />
         <div className="flex flex-col mx-4">
           <div className="my-2">
             {props.tags.map((item) => (
