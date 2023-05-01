@@ -55,7 +55,7 @@ export const createBlog = async (req, res) => {
         return res.status(422).json({ message: "All fields must be filled" });
     }
     const author = await UserModel.findById({ _id: req.userId })
-    console.log(author)
+    // console.log(author)
     const newBlog = new BlogModel({
         title: title,
         message: content,
