@@ -1,183 +1,201 @@
 import React, { useState } from "react";
 import Card from "./Card";
-import anilabha_dutta_img from "../../assets/team/Anilabha Dutta.jpg"
-import anirban_debnath_img from "../../assets/team/Anirban Debnath.jpeg"
-import anshik_chand_img from "../../assets/team/Anshik Chand.jpg"
-import anubhab_sarkar_img from "../../assets/team/Anubhab Sarkar.jpg"
-import arnab_pramanik_img from "../../assets/team/Arnab Paramanik.jpg"
-import babai_ghosh_img from "../../assets/team/Babai Ghosh.jpg"
-import debopriya_das_img from "../../assets/team/Debopriya Das.jpg"
-import mainak_maiti_img from "../../assets/team/MAINAK MAITI.jpg"
-import prakritish_mukhopadhyay_img from "../../assets/team/PRAKRITISH MUKHOPADHYAY.jpg"
-import rajdeep_nath_img from "../../assets/team/Rajdeep Nath.jpg"
-import sayangdipta_sen_img from "../../assets/team/Sayangdipta Sen.jpg"
-import shankhalika_mallick_img from "../../assets/team/Shankhalika Mallick.jpeg"
-import shreyan_ghatak_img from "../../assets/team/Shreyan Ghatak.jpg"
+import Kushal_Ghosh from "../../assets/team/coreteam/Kushal_Ghosh.jpeg";
+import Arka_Biswas from "../../assets/team/coreteam/Arka Biswas.jpeg";
+import Bisal_Kumar from "../../assets/team/coreteam/Bisal Kumar.jpeg";
+import Nisha from "../../assets/team/coreteam/Nisha.jpeg";
+import Protiti_Saha from "../../assets/team/coreteam/Protiti Saha.jpeg";
+import Saikat_Parker from "../../assets/team/coreteam/Saikat Parker.jpeg";
+import Saikat_Sarkar from "../../assets/team/coreteam/Saikat Sarkar.jpeg";
+import Sastipada from "../../assets/team/coreteam/Sastipada.jpeg";
+import Shourjendra from "../../assets/team/coreteam/Shourjendra.jpeg";
+import Soham_Sen from "../../assets/team/coreteam/Soham Sen.jpeg";
+import Soumya_Samanta from "../../assets/team/coreteam/Soumya Samanta.jpeg";
+import Sourav_Ghosh from "../../assets/team/coreteam/Sourav Ghosh.jpeg";
+import Souvik_Biswas from "../../assets/team/coreteam/Souvik Biswas.jpeg";
+import Sushant_Kumar from "../../assets/team/coreteam/Sushant Kumar.jpeg";
+import Tunnisha from "../../assets/team/coreteam/Tunnisha.jpeg";
+import Uttaran from "../../assets/team/coreteam/Uttaran.jpeg";
+import V_Nikita from "../../assets/team/coreteam/V Nikhita.jpeg";
+import Wasim_reja from "../../assets/team/coreteam/Wasim Reja.jpeg";
 
 const CoreTeam = () => {
   const [show, setShow] = useState(false);
-  const [currentInd,setCurrentInd] = useState(null)
+  const [currentInd, setCurrentInd] = useState(null);
   const coreTeamDetails = [
     {
-      name: "SHREYAN GHATAK",
-      designation: "Secretary & English Editor",
-      department: "Civil Engineering",
-      imgLink:
-        shreyan_ghatak_img,
-
-      linkedin: "",
+      name: "Uttaran Nath Sarkar",
+      designation: "Secretary & Bengali Editor",
+      department: "Electrical Engineering",
+      linkedin: "https://www.linkedin.com/in/uttaran-nath-sarkar-148498203",
+      imgLink: Uttaran,
       github: "",
     },
     {
-      name: "ANSHIK CHAND",
-      designation: "Cashier &  Hindi Editor",
-      department: "Civil Engineering",
-      imgLink:
-        anshik_chand_img,
-
-      linkedin: "https://www.linkedin.com/in/anshik-chand-2b32381b4",
+      name: "Sastipada Dan",
+      designation: "Cashier & Bengali Editor",
+      department: "Electrical Engineering",
+      linkedin: "https://www.linkedin.com/in/sastipada-dan-266019203",
+      imgLink: Sastipada,
       github: "",
     },
     {
-      name: "SHANKHALIKA MALLICK",
+      name: "V. Nikhita",
       designation: "Cashier & English Editor",
-      department: "Electronics & Communication Engineering",
-      imgLink:
-        shankhalika_mallick_img,
-
-      linkedin: "https://in.linkedin.com/in/shankhalika-mallick-248b3819a",
+      department: "Computer Science & Engineering",
+      linkedin: "https://www.linkedin.com/in/nikhita28",
+      imgLink: V_Nikita,
       github: "",
     },
     {
-      name: "ANIRBAN DEBNATH",
-      designation: "Media & Technical Head",
-      department: "Electronics & Communication Engineering",
-      imgLink:
-        anirban_debnath_img,
-
-      linkedin: "https://www.linkedin.com/in/anirban-debnath-9977011a2",
+      name: "Wasim Reja",
+      designation: "Media, Web & Technical Head",
+      department: "Information Technology",
+      linkedin: "https://www.linkedin.com/in/wasimreja/",
+      imgLink: Wasim_reja,
       github: "",
     },
     {
-      name: "ANUBHAV SARKAR",
+      name: "Bisal Kumar",
+      designation: "Strategist & Hindi Editor",
+      department: "Information Technology",
+      linkedin: "https://www.linkedin.com/in/bisal-kumar-97459122a",
+      imgLink: Bisal_Kumar,
+      github: "",
+    },
+    {
+      name: "Protiti Saha",
+      designation: "Strategist & Event Head",
+      department: "Electrical Engineering",
+      linkedin: "https://www.linkedin.com/in/protiti-saha-b91028203/",
+      imgLink: Protiti_Saha,
+      github: "",
+    },
+    {
+      name: "Nisha Yadav",
+      designation: "Strategist & Hindi Editor",
+      department: "Computer Science & Engineering",
+      linkedin: "https://www.linkedin.com/in/nisha-yadav-2950351ab/",
+      imgLink: Nisha,
+      github: "",
+    },
+    {
+      name: "Soham Sen",
       designation: "English Editor",
-      department: "Electronics & Communication Engineering",
-      imgLink:
-        anubhab_sarkar_img,
-
-      linkedin: "https://www.linkedin.com/in/anubhabsarkar/",
+      department: "Electrical Engineering",
+      linkedin: "https://www.linkedin.com/in/nuclearcactus/",
+      imgLink: Soham_Sen,
       github: "",
     },
     {
-      name: "PRAKRITISH MUKHOPADHYAY",
-      designation: "Bengali Editor",
+      name: "Tunnisha Dasgupta",
+      designation: "English Editor",
       department: "Civil Engineering",
-      imgLink:
-        prakritish_mukhopadhyay_img,
-
-      linkedin: "https://www.linkedin.com/mwlite/in/pmuk",
+      linkedin: "https://www.linkedin.com/in/tunnisha-das-gupta-a43231204/",
+      imgLink: Tunnisha,
       github: "",
     },
     {
-      name: "RAJDEEP NATH",
-      designation: "Bengali Editor",
-      department: "Mechanical Engineering",
-      imgLink:
-       rajdeep_nath_img ,
-
-      linkedin: "https://www.linkedin.com/in/rajdeep-nath-4b0877198/",
-      github: "",
-    },
-    {
-      name: "BABAI GHOSH",
+      name: "Sourav Ghosh",
       designation: "Bengali Editor",
       department: "Electrical Engineering",
-      imgLink:
-       babai_ghosh_img ,
-
-      linkedin:
-        "https://www.linkedin.com/in/babai-ghosh-9930a1211?trk=contact-info",
+      linkedin: "https://www.linkedin.com/in/sourav-ghosh-02b3ba213",
+      imgLink: Sourav_Ghosh,
       github: "",
     },
     {
-      name: "DEBOPRIYA DAS",
+      name: "Sushant Kumar Gupta",
+      designation: "Hindi Editor",
+      department: "Information Technology",
+      linkedin: "https://www.linkedin.com/in/sushantkumargupta2001",
+      imgLink: Sushant_Kumar,
+      github: "",
+    },
+    {
+      name: "Saikat Paikar",
+      designation: "Design Head",
+      department: "Civil Engineering Department",
+      linkedin: "https://www.linkedin.com/in/saikat-paikar-905a70207",
+      imgLink: Saikat_Parker,
+      github: "",
+    },
+    {
+      name: "Arka Biswas",
+      designation: "Design Head",
+      department: "Electrical Engineering",
+      linkedin: "https://www.linkedin.com/in/arka-biswas-859428203/",
+      imgLink: Arka_Biswas,
+      github: "",
+    },
+    {
+      name: "Soumya Samanta",
       designation: "Artwork Head",
-      department: "Civil Engineering",
-      imgLink:
-        debopriya_das_img,
-
-      linkedin: "https://www.linkedin.com/in/debopriya-das-8502a41b4",
+      department: "Civil Engineering Department",
+      linkedin: "https://www.linkedin.com/in/soumya-samanta-b55426203",
+      imgLink: Soumya_Samanta,
       github: "",
     },
     {
-      name: "ANILABHA DATTA",
+      name: "Souvik Biswas",
       designation: "Photography Head",
-      department: "Computer Science & Engineering",
-      imgLink:
-        anilabha_dutta_img,
-
-      linkedin: "https://www.linkedin.com/in/anilabha-datta",
+      department: "Electronics & Communication Engineering",
+      linkedin: "https://www.linkedin.com/in/souvik-biswas-84b766246/",
+      imgLink: Souvik_Biswas,
       github: "",
     },
     {
-      name: "SAYANGDIPTA SEN",
-      designation: "Design Head",
-      department: "Civil Engineering",
-      imgLink:
-       sayangdipta_sen_img ,
-
-      linkedin: "http://www.linkedin.com/in/sayangdiptasen1006",
+      name: "Kushal Ghosh",
+      designation: "Photography Head",
+      department: "Information Technology",
+      linkedin: "https://www.linkedin.com/in/kushaljgec2025/",
+      imgLink: Kushal_Ghosh,
       github: "",
     },
     {
-      name: "ARNAB PARAMANIK",
-      designation: "Design Head",
+      name: "Shourjendra Banerjee",
+      designation: "Social Media Head & Event Head",
+      department: "Information Technology",
+      linkedin: "https://www.linkedin.com/in/shourjendra-banerjee-82589422a/",
+      imgLink: Shourjendra,
+      github: "",
+    },
+    {
+      name: "Saikat Sarkar",
+      designation: "Social Media Head",
       department: "Mechanical Engineering",
-      imgLink:
-        arnab_pramanik_img,
-
-      linkedin: "https://www.linkedin.com/in/arnab-paramanik-1b8286174/",
-      github: "",
-    },
-    {
-      name: "MAINAK MAITY",
-      designation: "Design Head",
-      department: "Mechanical Engineering",
-      imgLink:
-        mainak_maiti_img,
-
-      linkedin: "https://www.linkedin.com/in/mainak-maiti-56657b192",
+      linkedin: "https://www.linkedin.com/in/saikat-sarkar-259021203",
+      imgLink: Saikat_Sarkar,
       github: "",
     },
   ];
 
   return (
-    <div>
-      <h1 className="text-center text-5xl p-10 text-[#295C7A]">
-        Meet the Core Team
+    <div className="bg-[#252b42]">
+      <h1 className="text-center text-5xl p-10 text-[#fff]">
+        Meet the Web Team
       </h1>
       <div>
-        <div className="flex justify-center items-center flex-wrap gap-x-32 gap-y-8 mb-10 px-10">
-          {coreTeamDetails.map((details,ind) => (
+        <div className="flex justify-center items-center flex-wrap gap-x-32 gap-y-8 px-10 pb-10 mt-4">
+          {coreTeamDetails.map((details, ind) => (
             <div className="flex flex-col items-center gap-4">
               <div className="relative">
                 <img
                   src={details.imgLink}
                   alt={details.name}
-                  className="rounded-full mx-auto  w-44 h-44 "
+                  className="rounded-full mx-auto  w-48 h-48"
                 />
                 <button
                   onClick={() => {
                     setShow(true);
-                    setCurrentInd(ind)
+                    setCurrentInd(ind);
                   }}
-                  className="absolute bottom-4 right-[-3px] rounded-full py-[6px] px-[15px] bg-transparent "
+                  className="absolute bottom-4 right-[-3px] rounded-full py-[6px] px-[15px] bg-transparent"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="35"
                     height="35"
-                    fill="#fff"
+                    fill="#0f0f0f"
                     viewBox="0 0 20 20"
                     className="white shadow-md rounded-full"
                   >
@@ -186,17 +204,22 @@ const CoreTeam = () => {
                 </button>
               </div>
               <div>
-                <p className="text-center font-bold">{details.name}</p>
-                <p className="text-center">{details.designation}</p>
+                <p className="text-center font-bold text-[#fff]">
+                  {details.name}
+                </p>
+                <p className="text-center text-[#fff]">{details.designation}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <Card onClose={() => setShow(false)} show={show} details={coreTeamDetails[currentInd]} />
+      <Card
+        onClose={() => setShow(false)}
+        show={show}
+        details={coreTeamDetails[currentInd]}
+      />
     </div>
   );
 };
-
 
 export default CoreTeam;
